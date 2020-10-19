@@ -1,0 +1,71 @@
+Installation
+====================
+
+1. https://git-scm.com/
+2. https://brew.sh
+    brew install git
+
+Config
+====================
+
+settings to git deployment can be made on 3 levels:
+  1. system   /etc/gitconfig
+  2. user     ~/.gitconfig
+              $HOME\.gitconfig
+
+  system:   git config --system
+  user:     git config --global
+  project:  git config
+
+setting git user:
+    git config --global user.name "<user name>"
+setting git email:
+    git config --global user.email "email"
+list configurations:
+    git config --list
+
+git config is on home folder
+  cd ~
+  \.gitconfig
+
+editor for git
+==============
+git config --global core.editor "vim"
+
+git auto completion
+====================
+auto complete commands file path and branch names
+https://github.com/git/git
+
+=> /contrib/completion/git_completion.bash
+
+2 options to save :
+  1.raw => copy text to text editor
+  2.save to user directory => .bash
+
+mv <file> .git-git_completion
+
+edit ~/.bashsrc or ~/.bash_profile
+add <if clause for loading the completion bash>
+
+Initialise project
+=======================
+  - create folder
+  - git init
+
+
+where's git stores its files
+============================
+after running git init, git will create a .git folder, under this folder all git's files will be place, including for example the config file,
+so for example if we'll cat the file:
+$ cat config
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+
+we'll see the content of the configuration setting.
+all of git's data is stored in this one folder, deleting it will remove git tracking of this folder content completely.
