@@ -48,8 +48,8 @@ mv <file> .git-git_completion
 edit ~/.bashsrc or ~/.bash_profile
 add <if clause for loading the completion bash>
 
-Initialise project
-=======================
+Initialise project repository
+==============================
   - create folder
   - git init
 
@@ -69,3 +69,52 @@ $ cat config
 
 we'll see the content of the configuration setting.
 all of git's data is stored in this one folder, deleting it will remove git tracking of this folder content completely.
+
+Git commits
+===========
+
+1. tell git to add all of the folder content to the repository (git is still not tracking the changes)
+  git add .
+2. git commit -m "<message>" (all of the changes we'll make to the files that were added will be tracked)
+
+Commit message best practice
+============================
+  - short single line summary (less than 50 characters)
+  - optionally followed by a blank line and a more complete description
+  - each line should be less than 72 characters
+  - write commit messages in present tense, not past tense
+    the reason is that it describe the change, for example "Fix for a bug" or "fixes a bug"  not "fixed a bug"
+  - bullet points are usually asterisks or hyphens
+  - can add "tracking numbers" from bugs or support request
+  - can develop shorthand for the organisation
+    "[css,js]"
+    "bugfix:"
+    "#38405 -"
+
+View the commit log
+===================
+1. git log
+
+  return a log of all the commit on the project, with the newest entry on the top.
+
+  for exmaple:
+
+      commit 02219a730d306be711503ee14450175fd0f24b6d (HEAD -> master)
+      Author: <user + email>
+      Date:   Mon Oct 19 09:32:56 2020 +0300
+
+        initial commit
+
+        first line: unique id number of the commit, will help to identify the commit and track it
+        second line: username of the committer
+        3rd line: date of the commits
+        4th line: commit message
+
+2. git log -n <number>
+    show number specified of recent messages
+
+3. git log --since=2019-01-01
+    will show all commit since the date specified
+
+4. git log --until=2019-01-01
+    will show all commit until the date specified
