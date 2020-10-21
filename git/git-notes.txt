@@ -118,3 +118,62 @@ View the commit log
 
 4. git log --until=2019-01-01
     will show all commit until the date specified
+
+5. git log --author="<author name>"
+    will show all committed by specific author , can be any part of the name not the full name
+
+6. git log --grep="<search phrase>"
+    will globaly search for regular expersions
+
+Hash values
+=============
+
+  - git generatge a checksum for each change set
+  - checksum convert data into a simple number
+  - same data always equals same checksum
+  - changing data would change checksum value
+  - git uses SHA-1 hash algorithm to create checksum (40 characters hexadecimal strings(0-9,a-f))
+
+Head pointer
+=============
+
+  pointer to tip of current branch in repository, new commits will move pointer (HEAD) to the new commit, the pointer
+  points to the HEAD of the repository
+
+  the HEAD is located on the .git folder on the /HEAD file
+  showing the file content will show the HEAD pointer reference to a branch
+
+  example:
+  sh-3.2$ cd .git
+  sh-3.2$ cat HEAD
+  ref: refs/heads/<branch name>
+
+  and it's telling us we can find the information in the refs folder under the specific file, showing the content of it will give us the SHA value
+  of the commit
+
+  sh-3.2$ cat refs/heads/tess
+  035dcc76f72e9e823220e7e5a3b24b2a2d41ad07
+
+  we can also check other pointers files on the heads folder
+
+git status
+  will show us the status of our project.
+  on which branch we are on, "nothing to commit" will tell us git is synced with our
+  project
+
+  "untracked files" will tel us there are files not in the repository, git is not tracking them, including changes and git doesn't
+  know anything about them.
+
+  in case of "untracked files" we can use
+    git add . for all content on my working folder OR we can use git add <file name> , for adding specific file.
+
+adding changes to a file to the repository is exactly like adding new files,
+    git add <file name> <file name>
+
+    then git commit to commit the changes to staging
+
+Viewing changes with diff
+=========================
+
+  git diff
+    will show what has changed
