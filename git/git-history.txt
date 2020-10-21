@@ -1,0 +1,43 @@
+GIT
+========================
+
+Keeps track of changes
+
+History
+========================
+SCCS - 1972: develop by AT&T bundled free with unix which also free and spread to universities and from there to work places with students.
+
+In contrast to primitive version control system like (changing name of a file), sccs storing only original version and sets of changes.
+
+RCS - 1982: Revision Control System, cross platform, faster then sccs, storing only dates file and only historical changes.
+
+Both allowed only working with one file at a time.
+
+1986 - 1990 CVS : Concurrent Version System.
+  - open source
+  - multiples files
+  - entire project
+  - multi user
+
+2000 : Apache Subversion (SUN)
+  - open source
+  - Tracks text and images
+  - folders
+
+2004 - 2005 : GIT
+  - distributed version Control
+  - open source and free
+  - compatible with linux , mac & windows
+  - fast
+  - safe guard
+  - diffrent users maintain their own repositories
+  - no central repository
+  - changes are stored as change sets
+  - track changes, not revisions
+  - change sets can be exchanged between repositories
+
+  Benefits
+  ----------
+  - no single repositories
+  - many working copies
+  - each with their own combination of change sets
