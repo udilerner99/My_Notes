@@ -176,4 +176,4 @@ Viewing changes with diff
 =========================
 
   git diff
-    will show what has changed
+    This will show what has changed
