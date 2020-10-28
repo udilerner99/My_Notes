@@ -264,3 +264,12 @@ Unstage files
     1. after file was added with change
     2. git reset HEAD <file name>
   and the file will be unstaged
+
+Amend commits
+=============
+once a commit had been created, git can amend extra commit into the existing commit with the new changes
+
+1. add the changes (git add <file name>)
+2. git commit --amend -m "<commit message>"
+
+after committing the message can be changed using : git commit --amend
