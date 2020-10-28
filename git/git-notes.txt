@@ -237,3 +237,15 @@ comparing two historical commits:
 Multi line commit messages
 ==========================
 1. git commit -a (hit return) = > will go to the text editor
+2. save and quit
+
+git log --oneline
+  will show condense message in one line
+
+Atomic Commits
+================
+
+  - small Commits
+  - only affect a single aspect
+  - easier to understand, to work with and to find bugs
+  - improve collaboration
