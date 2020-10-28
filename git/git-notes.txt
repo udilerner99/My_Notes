@@ -176,4 +176,30 @@ Viewing changes with diff
 =========================
 
   git diff
-    This will show what has changed
+    This will show what has changed, on the WORKING folder against the STAGING tree (will not show us what was changed after commit by default)
+
+  git diff --staged
+    will show us the difference between staging area and repository
+
+Deleting files
+=================
+
+2 methods to delete files:
+  1. remove physically from folder by using finder for example, then use
+      git rm <file name>
+      and then commit the change
+  2. just use
+      git rm <file name>
+      the file is removed using a unix command, it's still in the repository and we can retrieve it from there if needed
+      and then commit the change
+
+Renaming and Moving files
+=========================
+1. once a file in the repository is renamed , git will mark it as old file delete and a new file created
+use git add & git rm on the files to add the changes to the repository
+
+now on git status , git will show the files had been renamed (after checking that they were similar)
+exmplae:  renamed:    dumm_file.txt -> dumm_file_new.txt
+
+2. use
+  git mv <file name> <new file name>
