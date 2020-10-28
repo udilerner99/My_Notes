@@ -249,3 +249,18 @@ Atomic Commits
   - only affect a single aspect
   - easier to understand, to work with and to find bugs
   - improve collaboration
+
+
+Undo working directory changes
+==============================
+
+  undo changes to a file:
+    once a file is tracked on repository, and a change had been made, using checkout on the file will undo the change
+    git checkout --<file name>
+
+Unstage files
+=============
+  for uncommiting :
+    1. after file was added with change
+    2. git reset HEAD <file name>
+  and the file will be unstaged
