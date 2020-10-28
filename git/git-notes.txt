@@ -233,3 +233,7 @@ comparing two historical commits:
   2. git diff <SHA value 1st commit>..<SHA value selected commit to>
 
   we can also use same with ..HEAD to compare to latest commit
+
+Multi line commit messages
+==========================
+1. git commit -a (hit return) = > will go to the text editor
