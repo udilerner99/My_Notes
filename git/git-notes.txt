@@ -224,3 +224,12 @@ a commit message can be added
 
 View previous commits
 ======================
+steps:
+  1. use git log to show the log commits , and choose the SHA you need
+  2. git show <SHA value>
+
+comparing two historical commits:
+  1. git log
+  2. git diff <SHA value 1st commit>..<SHA value selected commit to>
+
+  we can also use same with ..HEAD to compare to latest commit
