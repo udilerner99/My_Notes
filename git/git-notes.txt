@@ -203,3 +203,24 @@ exmplae:  renamed:    dumm_file.txt -> dumm_file_new.txt
 
 2. use
   git mv <file name> <new file name>
+
+Showing changes
+================
+git diff
+  will show the diffrence between the HEAD and minus one change (rows removed will be marked with minus, rows added will be marked with +)
+
+git diff --color-words
+  will show only the words that are diffrent
+
+Stage and Commit shortcut
+=========================
+
+git commit -a
+  - stages and commits all changes to tracked files
+  - does not include untracked files
+
+a commit message can be added
+  git commit -am "the commit message"
+
+View previous commits
+======================
