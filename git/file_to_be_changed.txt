@@ -1,5 +1,8 @@
 line 1: some text here
 line 2: some text here
 line 3: some text here
+<<<<<<< HEAD
 line 4: some text here
 line 5: some text here this will be removed
+=======
+>>>>>>> parent of 677aeab... new line added
