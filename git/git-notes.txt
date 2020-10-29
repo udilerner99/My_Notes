@@ -282,3 +282,33 @@ Retrieve old versions
     2. using the SHA value, run
       git checkout <SHA value> -- checkout <file name>
     3. commit the change
+
+Removing untracked files
+========================
+
+  to remove untracked files from git repository that we don't want git to track with physically removing them, we can use git clean
+    1. git clean -n   we'll get a list of files that will be removed from repository
+    2. git clean -f will remove the files
+
+Use .gitignoe files
+===================
+
+  we can instruct git to ignore specific files and it will not track them, logs or any other that type of files
+  1. create a file in project/.gitignore
+  2. git will get a list of rules to determine which files to ignore
+  3. changes made to ignored files will be ignore by Git
+
+  pattern matching can be used :
+    * ? [aeiou][0-9]
+    logs/*.txt
+  negative experssions
+   like ignore all php:  *.php
+    don't ignore : !index.php
+
+  ignore all files in a directory with trailing slash
+    assests/videos/
+
+  comments
+    # this is a comments
+
+  blank lines will be skipped
