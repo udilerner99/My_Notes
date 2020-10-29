@@ -273,3 +273,12 @@ once a commit had been created, git can amend extra commit into the existing com
 2. git commit --amend -m "<commit message>"
 
 after committing the message can be changed using : git commit --amend
+
+Retrieve old versions
+=====================
+
+  a file can be restored back to previous version.
+    1. use git log to show the desired version
+    2. using the SHA value, run
+      git checkout <SHA value> -- checkout <file name>
+    3. commit the change
