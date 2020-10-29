@@ -312,3 +312,19 @@ Use .gitignoe files
     # this is a comments
 
   blank lines will be skipped
+
+  what should be ignored:
+    - compiled source code
+    - packages and compressed files
+    - logs and databases
+    - operating system and generated files
+    - user uploaded assets (images, pdfs videos)
+
+  git has gitignore template ready to download
+    https://github.com/github/gitignore
+
+Removing tracked files from repository
+======================================
+
+  if there's a file already being tracked, just adding it to .gitignore will not stop tracking it
+  git rm --cached <file name> and file will be stoped from tracking on git without removing it physically
