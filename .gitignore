@@ -11,3 +11,4 @@ assets/videos/
 
 git/access.log
 git/file_with_text.txt
+.DS_Store
