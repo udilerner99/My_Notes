@@ -328,3 +328,12 @@ Removing tracked files from repository
 
   if there's a file already being tracked, just adding it to .gitignore will not stop tracking it
   git rm --cached <file name> and file will be stoped from tracking on git without removing it physically
+
+Tracking empty directory
+========================
+
+  git ls-tree HEAD : will list all files and directories under the HEAD
+
+  git doesn't track empty directories , there are several methods to set git to track them:
+    1. add a .gitkeep file to the directory (touch <folder name>/.gitkeep)
+    
