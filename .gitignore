@@ -10,3 +10,4 @@ assets/videos/
 !assets/videos/tour_*.mp4
 
 git/access.log
+git/file_with_text.txt
