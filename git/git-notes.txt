@@ -452,4 +452,7 @@ Branches
 
     when creating new branch don't forget it will branch from the point the HEAD is pointing to
 
+  creating and switching in one command
+    git checkout -b <new branch name>
+
     
