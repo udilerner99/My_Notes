@@ -314,7 +314,7 @@ Use .gitignoe files
   blank lines will be skipped
 
   what should be ignored:
-    - compiled source code
+    -  compiled source code
     - packages and compressed files
     - logs and databases
     - operating system and generated files
@@ -336,4 +336,9 @@ Tracking empty directory
 
   git doesn't track empty directories , there are several methods to set git to track them:
     1. add a .gitkeep file to the directory (touch <folder name>/.gitkeep)
-    
+
+Tree-ish
+=========
+
+  a directory containing files and other directories (GIT calls "trees") , a commit is considered a tree-ish, it refers to a tree at the point
+  when a commit had been applied.
