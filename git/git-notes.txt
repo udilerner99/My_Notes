@@ -420,3 +420,36 @@ commit log format
     git log --graph
 
     git log --graph --all --oneline --decorate
+
+Branches
+==============
+
+  - Branches are cheap
+      for trying new ideas
+      isolate features or section of work
+  - one working directory
+  - fast context switching
+
+  show all branch
+    git branch
+    the Asterix symbol current checked out branch
+
+  create branch
+    git branch <branch name>
+
+  on .git/HEAD we can see where our HEAD is pointing
+    cat .git/HEAD
+
+  to see HEAD refernce per branch we use:
+    ls -la .git/refs/heads
+
+  if we'll use git log --oneline
+    we can see on which commit the tip of HEAD is pointing, and on which commit each branch is pointing
+
+  switch Branches
+    git checkout <branch name>
+    we can confirm it if we'll check the .git/HEAD
+
+    when creating new branch don't forget it will branch from the point the HEAD is pointing to
+
+    
