@@ -450,9 +450,9 @@ Branches
     git checkout <branch name>
     we can confirm it if we'll check the .git/HEAD
 
-    when creating new branch don't forget it will branch from the point the HEAD is pointing to
+    if trying to checkout branch and there's a conflict with one of the files, git will not allow us to checkout the branch, will need to resolve
+    the conflict.
 
-  creating and switching in one command
-    git checkout -b <new branch name>
-
-    
+      - commit the changes to current branch
+      - remove the change, checkout the file again
+      - stash the changes
