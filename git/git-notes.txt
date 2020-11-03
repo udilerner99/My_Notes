@@ -342,3 +342,48 @@ Tree-ish
 
   a directory containing files and other directories (GIT calls "trees") , a commit is considered a tree-ish, it refers to a tree at the point
   when a commit had been applied.
+
+  it can refer to :
+    - SHA-1 Hash
+    - HEAD pointer reference
+    - Branch reference
+    - Tag reference
+    - Ancestry
+
+  Ancestry: Parents
+    - <SHA-1>^
+    - HEAD^
+    - master^
+    - HEAD~1, HEAD~
+    - git show HEAD^
+
+    Ancestry: GrandParents
+      - <SHA-1>^^
+      - HEAD^^
+      - master^^
+      - HEAD~2
+      - git show HEAD^^
+
+      Ancestry: GreatGrandParents
+        - <SHA-1>^^^
+        - HEAD^^^
+        - master^^^
+        - HEAD~3
+        - git show HEAD^^^
+        - git show HEAD~3
+
+Tree listing
+============
+  show content of directory inside git
+
+  git ls-tree <tree-ish>
+
+  git help ls-tree
+
+  git ls-tree HEAD
+    show tree of HEAD (latest commit), all rows marked as tree are directories, blob are files (binary large objects)
+    you can pick one of the trees specified
+    git ls-tree HEAD <tree name> : shows the tree object
+    git ls-tree HEAD <tree name>/ : will show content of the tree object
+
+  
