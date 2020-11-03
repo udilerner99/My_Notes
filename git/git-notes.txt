@@ -386,4 +386,20 @@ Tree listing
     git ls-tree HEAD <tree name> : shows the tree object
     git ls-tree HEAD <tree name>/ : will show content of the tree object
 
-  
+Filter the commit log
+=====================
+
+    git log -3
+    git log --since=<yyyy-mm-dd>
+    git log --until="3 days ago"
+    git log --after=2.weeks --before=3.days
+
+    git log --author="<user>"
+
+    git log --grep="<text value>"
+
+    git log <SHA-1>..HEAD : shows log from the SHA to HEAD
+
+    showing log only to a specific file in git:
+      1. get file from git by : git ls-tree <get the file>
+      2. git log <file name> / or <directory>
