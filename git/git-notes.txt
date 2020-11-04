@@ -517,3 +517,44 @@ Merge code
     git branch --merged
 
   after merging you can diff again and see that there's no difference
+
+Resolving conflicts
+===================
+
+1. abort the merge:
+  git merge --abort
+  will abort the merge as if we never started the merge
+
+Stashing
+==========
+
+we can stash away unwanted changes without committing them.
+
+Set up a remote repositories
+===========================
+
+1. create the repository on git
+2. git remote on local will give us remote repositories connected to local git repository
+3. use : git remote add <alias for the remote, usually origin for primary main remote>  <url of the repository>
+4. git remote -v
+    will display additional information about the remotes
+    .git/config will display the information about the remote
+
+git remote rm <name of alias> - will remove the remote
+
+5. git push -u <alias of remote> <name of branch>
+  for exmaple : git push -u origin master
+
+  git branch -r
+    will show remote Branches
+
+  git branch -a
+    will show all branches, both local and remote
+
+  on .git/refs/remotes/<name of alias - usually origin>/master  will see the SHA-1 for the remote
+    by using cat .git/refs/remotes/origin/master
+
+  Cloning a remote repository
+  ========================
+
+  git clone <url from git> <name of local repository>
