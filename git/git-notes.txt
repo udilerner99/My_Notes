@@ -554,7 +554,44 @@ git remote rm <name of alias> - will remove the remote
   on .git/refs/remotes/<name of alias - usually origin>/master  will see the SHA-1 for the remote
     by using cat .git/refs/remotes/origin/master
 
-  Cloning a remote repository
-  ========================
+Cloning a remote repository
+========================
 
   git clone <url from git> <name of local repository>
+
+  git diff --color-words origin/master..master
+    will show difference between local branch and remote branch
+
+  git push
+    will push origin to master since it's already aligend as default, we can use
+    git push <name of remote> <local branch>
+
+  Fetch
+  ===========
+
+     will fetch changes from remote repository, will not change master branch, does not merge anything into existing branches
+
+     git fetch
+      will bring back any other information about change, tag
+
+    - fetch before you work
+    - fetch before you push
+    - fetch before you go offline
+    - fetch often
+
+    git merge origin/master will merge now from the working into the STAGING, will be able to see the pointer moved the HEAD to the updated
+    SHA-1
+
+    git pull = git fetch + git merge
+
+    be caution with git pull since it will merge the changes in
+
+    we can create local branch from remote branch by:
+      git branch <branch name> <alias remote>/<remote branch>
+
+      to create the branch and check it out:
+        git branch -b <branch name> <remote alias>/<remote branch>
+
+      if we'll start working on local repository aligned with pointer on the remote repository, commit changes, and parallel someone else commits
+      other changes, we need to fetch, merge, and then we can push our changes (not that there are conflicts m it's because git doesn't know what 
+      should do with the pointer not aligned with the remotes)
