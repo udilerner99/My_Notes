@@ -1,4 +1,4 @@
-Installation
+differenceInstallation
 ====================
 
 1. https://git-scm.com/
@@ -503,3 +503,17 @@ Branches
 
       we can create a new branch directly from a specific branch
         git checkout -b <name_of_new_branch> <name of branch to create from>
+
+Merge code
+============
+
+  when merging branch, first checkout the receiving branch
+
+  1. always check differences between the branch you are merging into and the branch you are merging from
+     git diff <current branch>..<branch you are merging from>
+  2. git merge <name of branch you are merging from>
+
+  check the merged branch with:
+    git branch --merged
+
+  after merging you can diff again and see that there's no difference
