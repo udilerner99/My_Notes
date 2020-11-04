@@ -456,3 +456,47 @@ Branches
       - commit the changes to current branch
       - remove the change, checkout the file again
       - stash the changes
+
+      you can diff between branch
+        git diff <old branch>..<new branch>
+
+      and add ^ to a specific commit on the branch
+
+      we can check on current branch what was merged:
+        git branch --merged
+      we can also check what was not merged:
+        git branch --no-merged
+
+      rename branch (from the branch)
+        git branch -m <new branch name>
+
+      delete branch
+        git branch -d <branch name>
+
+      GIT prompt
+        check if it's installed:
+          __git_ps1_
+          -sh: __git_ps1_: command not found => not installed
+
+        https://github.com/git/git/tree/master/contrib/completion => git-prompt.sh
+
+        source ~.bash_profile for loading the git prompt
+
+      branch can get restarted, Reset changes the files in staging index and/or working directory to the state they had when a specified
+      when a commit was made
+
+      Moves HEAD pointer to a specific commit
+
+      Types: soft, mixed, hard
+
+      soft: moves HEAD pointer, does not change staging index, does not change working directory
+
+      git reset --soft <tree-ish>
+
+      mixed: moves HEAD pointer, changes staging index to match repository, does not change WORKING directory
+
+      git reset --mixed <tree-ish>
+
+      hard: move HEAD pointer, changes staging index to match repository, changes working directory to match repository
+
+      git reset --hard <tree-ish>
