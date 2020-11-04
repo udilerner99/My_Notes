@@ -500,3 +500,6 @@ Branches
       hard: move HEAD pointer, changes staging index to match repository, changes working directory to match repository
 
       git reset --hard <tree-ish>
+
+      we can create a new branch directly from a specific branch
+        git checkout -b <name_of_new_branch> <name of branch to create from>
