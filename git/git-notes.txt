@@ -593,5 +593,84 @@ Cloning a remote repository
         git branch -b <branch name> <remote alias>/<remote branch>
 
       if we'll start working on local repository aligned with pointer on the remote repository, commit changes, and parallel someone else commits
-      other changes, we need to fetch, merge, and then we can push our changes (not that there are conflicts m it's because git doesn't know what 
+      other changes, we need to fetch, merge, and then we can push our changes (not that there are conflicts, it's because git doesn't know what
       should do with the pointer not aligned with the remotes)
+
+  Delete remote branch
+  ====================
+
+  remove a branch from remote repository
+  useful when a feature branch is complete and merged
+
+  two options:
+    1. git push <alias> :<branch>
+    2. git push <alias> --delete <branch>
+
+  My working - scenario
+
+    we'll checkout the master:
+      git checkout master
+    we'll fetch all new commits:
+      git fetch
+    now, we'll merge them into our working branch :
+      git merge origin/master
+    we'll start our work on a separated fresh branch, so it will interfer with master and we can delete it if don't want to keep it:
+      git checkout -b <branch name>
+    we'll add chages to staging:
+      git add <file name>
+    we'll commit the change
+      git commit -m "<commit message>"
+
+      or git commit -am "<commit message>"
+
+    we want co worker to check our changes
+      - git fetch , to update any changes that may have been change on remote
+      - git push -u origin <branch name> => now the work is on the remote repository for the co work to check
+
+    the co-worker:
+      let say the cow-work already got the repository on local (so he doesn't need to clone it)
+      - checkout the branch:
+        git checkout master
+      - git fetch
+        will show the remote branch that been added
+      - git merge origin/master
+        now the master is up to date
+      after using git branch -r to see the new branches on remote
+        git checkout -b <remote branch> origin/<branch name>
+      can git show SHA1 to check the commit
+      let say the co work now want to make a change, commit the change to the branch
+        git commit -am "<commit message>"
+      git fetch
+      git push
+
+      back to my work:
+        git fetch =>  now we have the updated branch
+        git log -p <branch>..origin/<branch> =>  like diff but we'll see the changes individually
+        git merge origin/<branch>
+        git checkout master
+        git fetch
+        git merge origin/master
+        git merge <branch> => will implement the changes in the working branch
+        git push => push local branch of master to repository
+
+[alias] to added
+
+  st = status
+  co = checkout
+  ci = commit
+  br = Branch
+  df = diff
+  dfs = diff --staged
+  logg = log --graph --decorate --oneline -all
+
+  # Add alias "st = status" to ~/.gitconfig
+
+    git config --global alias.st "status"
+    git config --global alias.co "checkout"
+    git config --global alias.ci "commit"
+    git config --global alias.br "Branch"
+    git config --global alias.df "diff"
+    git config --global alias.dfs "diff --staged"
+    git config --global alias.logg "log --graph --decorate --oneline --all"
+
+  https://help.github.com/en/articles/set-up-git
