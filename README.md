@@ -1,0 +1,3 @@
+# Hi,
+
+I'm storing all my tech notes , regarding all sort of topics like git, python, etc...
