@@ -614,9 +614,9 @@ Cloning a remote repository
       git fetch
     now, we'll merge them into our working branch :
       git merge origin/master
-    we'll start our work on a separated fresh branch, so it will interfer with master and we can delete it if don't want to keep it:
+    we'll start our work on a separated fresh branch, so it will interfere with master and we can delete it if don't want to keep it:
       git checkout -b <branch name>
-    we'll add chages to staging:
+    we'll add changes to staging:
       git add <file name>
     we'll commit the change
       git commit -m "<commit message>"
