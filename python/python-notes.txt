@@ -44,4 +44,24 @@ check pyenv versions :
     This will kick off lots of internal Python tests that will verify your installation. You can just kick back and watch the tests pass.
 
 creating virtual environment:
-  
+  - create your project folder and add it to your git repo
+  - create your virtual environment:
+    pyenv virtualenv {python version} {virtual environment name}
+    when naming your environment name make sure it's aligned with python project
+  - active your virtual environment: pyenv local {virtual environment}
+  - check your virtual environment python version : pyenv which python
+    this time the result will under the project and virtual environment path
+
+  from this point any executable will under the virtual environment path
+    pyenv which pip
+
+Activating and Deactivating virtual environment
+  $ pyenv activate <environment_name>
+  $ pyenv deactivate
+
+setting virtual environment on IDE
+==================================
+now that virtual environment is setup, you can define the working path when creating the python project on your favourite IDE
+just specify the python virtual environment as the location of project, and you all setup.
+
+on IDE terminal you can activate the virtual environment and make sure your git is synced.
