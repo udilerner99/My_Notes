@@ -1,0 +1,47 @@
+before starting developing a python program we'll have some environment settings
+
+PYTHON SETUP
+===============
+
+* note: i recommend installing python through pyenv this will allow easier management of python versions
+
+1st. python setup
+run {which python} to check your python version and making sure it's setup on
+your home path
+
+python(master) > which python
+/usr/bin/python
+
+now, i have also python3 already installed so i can run
+python(master) > which python3
+/usr/bin/python3
+
+if you don't have python installed follow https://www.python.org/downloads/
+
+PYENV SETUP
+============
+
+next step will be to make sure we have virtual environment management software like pyenv
+i recommend it because it will help us secure our python application dependencies
+
+in order to install pyenv follow https://realpython.com/intro-to-pyenv/#installing-pyenv
+
+shortcut list:
+
+check pyenv versions :
+  pyenv versions
+    The * indicates that the system Python version is active currently
+  setting pyenv working python path version
+     pyenv global 3.8.9
+  python -V
+    check the working python version, and if you run "pyenv versions" you'll see the * indicating the changed working version of pyenv
+
+  from pyenv installation:
+    Pro Tip: A great way to get peace of mind that the version of Python you just installed is working properly is to run the built-in test suite:
+
+    $ pyenv global 3.8-dev
+    $ python -m test
+    This will kick off lots of internal Python tests that will verify your installation. You can just kick back and watch the tests pass.
+
+creating virtual environment:
+  
