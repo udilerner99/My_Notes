@@ -59,7 +59,7 @@ Activating and Deactivating virtual environment
   $ pyenv activate <environment_name>
   $ pyenv deactivate
 
-setting virtual environment on IDE
+Setting virtual environment on IDE
 ==================================
 now that virtual environment is setup, you can define the working path when creating the python project on your favourite IDE
 just specify the python virtual environment as the location of project, and you all setup.
