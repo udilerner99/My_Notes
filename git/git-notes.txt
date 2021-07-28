@@ -686,3 +686,10 @@ prompt for git displaying branch on cli:
 Get remote repository url
 ==========================
 git remote get-url origin
+
+generate token
+==========================
+if needed to recreate the token follow these steps:
+  1. Generate access-token from Github Settings->Developer Settings->Personal access tokens->Generate new token
+  2. Update URL for origin locally: git remote set-url origin https://<token>@<git_url>.git
+  3. Pull once: git pull https://<token>@<git_url>.git
