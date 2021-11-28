@@ -65,3 +65,30 @@ now that virtual environment is setup, you can define the working path when crea
 just specify the python virtual environment as the location of project, and you all setup.
 
 on IDE terminal you can activate the virtual environment and make sure your git is synced.
+
+online notes:
+https://www.freecodecamp.org/news/manage-multiple-python-versions-and-virtual-environments-venv-pyenv-pyvenv-a29fb00c296f/
+
+Display local environments
+==========================
+pyenv virtualenvs
+
+
+Activated/ deactivated with:
+
+$ pyenv activate <name>
+$ pyenv deactivate
+
+Delete existing virtualenv
+Removing the directories in $(pyenv root)/versions and $(pyenv root)/versions/{version}/envs will delete the virtualenv, or you can run:
+
+pyenv uninstall my-virtual-env
+
+installing specific airflow versions
+pip install apache-airflow==1.10.9
+
+
+DONT FORTGET !!! : add project root to PYTHONPATH on profile (.bash_profile)
+https://stackoverflow.com/questions/51146723/is-adding-project-root-directory-to-sys-path-a-good-practice
+
+pip freeze > requirements.txt in the command line to generate a requirements.txt
