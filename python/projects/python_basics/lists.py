@@ -162,3 +162,86 @@ tropical = ["mango", "pineapple", "papaya"]
 thislist.extend(tropical)
 print(thislist)
 
+# Remove Specified Item
+# The remove() method removes the specified item.
+#
+# Example
+# Remove "banana":
+
+thislist = ["apple", "banana", "cherry"]
+thislist.remove("banana")
+print(thislist)
+
+# Remove Specified Index
+# The pop() method removes the specified index.
+#
+# Example
+# Remove the second item:
+
+thislist = ["apple", "banana", "cherry"]
+thislist.pop(1)
+print(thislist)
+
+# If you do not specify the index, the pop() method removes the last item.
+
+# Example
+# Remove the last item:
+
+thislist = ["apple", "banana", "cherry"]
+thislist.pop()
+print(thislist)
+
+# The del keyword also removes the specified index:
+#
+# Example
+# Remove the first item:
+
+thislist = ["apple", "banana", "cherry"]
+del thislist[0]
+print(thislist)
+
+# The del keyword can also delete the list completely.
+#
+# Example
+# Delete the entire list:
+
+thislist = ["apple", "banana", "cherry"]
+del thislist
+
+# Clear the List
+# The clear() method empties the list.
+#
+# The list still remains, but it has no content.
+#
+# Example
+# Clear the list content:
+thislist = ["apple", "banana", "cherry"]
+thislist.clear()
+print(thislist)
+
+# Loop Through a List
+# You can loop through the list items by using a for loop:
+#
+# Example
+# Print all items in the list, one by one:
+
+thislist = ["apple", "banana", "cherry"]
+for x in thislist:
+  print(x)
+
+# Example
+# Print all items by referring to their index number:
+count=0
+thislist = ["apple", "banana", "cherry"]
+for i in range(len(thislist)):
+  count += 1
+  print(count, thislist[i])
+
+# Example
+# Print all items, using a while loop to go through all the index numbers
+
+thislist = ["apple", "banana", "cherry"]
+i = 0
+while i < len(thislist):
+  print(thislist[i])
+  i = i + 1
