@@ -57,7 +57,7 @@ x = datetime.datetime(2018, 6, 1)
 
 print(x.strftime("%B"))
 
-A reference of all the legal format codes:
+# A reference of all the legal format codes:
 
 # Directive	Description 	                                        Example
 # %a    	Weekday, short version	                                Wed
