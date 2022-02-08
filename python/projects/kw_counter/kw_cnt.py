@@ -8,3 +8,4 @@ for x in f:
     print("current line is: {}".format(x))
     print("number of words in line is: ".format(x.split(" ")))
     print(len(x.split(" ")))
+f.close()
