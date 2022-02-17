@@ -1,0 +1,101 @@
+conventions
+
+classes start with an uppercase character
+  public class MyClass
+
+Methods and variables start with a lowercase character
+    void doSomething(String withThis) { }
+
+Constants are all uppercase
+    public  static final String FIRSTNAME = "Jhonny";
+
+
+  checking java vm installed correctly
+
+  ➜ java -version
+openjdk version "1.8.0_252"
+OpenJDK Runtime Environment (Zulu 8.46.0.19-CA-macosx) (build 1.8.0_252-b14)
+OpenJDK 64-Bit Server VM (Zulu 8.46.0.19-CA-macosx) (build 25.252-b14, mixed mode)
+
+My_Notes/java on  master [!] took 2s
+➜ javac -version
+javac 1.8.0_252
+
+
+jshell
+jshell
+
+/exit :to exit
+
+jshell> String s1 = "hello"
+s1 ==> "hello"
+
+jshell> s1
+s1 ==> "hello"
+
+jshell> var i1 = 5
+i1 ==> 5
+
+jshell> var i2 = 10
+i2 ==> 10
+
+jshell> var result = i1+i2
+result ==> 15
+
+/list
+list current code
+
+/save :save session to disk
+
+jshell> /save myCommands.java
+
+jshell> /open myCommands.java
+
+jshell> /reset
+|  Resetting state.
+
+jshell> /open myCommands.java
+
+jshell> /list
+
+   1 : String s1 = "hello";
+   2 : s1
+   3 : var i1 = 5;
+   4 : var i2 = 10;
+   5 : var result = i1+i2;
+
+jshell> /exit
+|  Goodbye
+
+
+On intellij marking the package and disabling "compact middle packages " display full path location for packages
+
+for comipling the package:
+My_Notes/java/java_essential/src on  master [!?]
+➜ javac com/example/idea/Main.java
+
+for running the package:
+My_Notes/java/java_essential/src on  master [!?]
+➜ java com.example.idea.Main
+
+intellij
+sout -> System.out.println();
+
+ctrl + j : display documentation
+
+java api docs 13 ...
+
+
+Types can be set in numeric literals with alpha notation
+var myInt = 5;
+var MyFloat = 5f;
+var myDouble = 5d;
+var myLong = 5L;
+
+Data Types    Bits Title     Minimum    Maximum
+byte          8               -128        127
+short         16              -32,768     32,767
+int           32              -2^31       2^31 - 1
+long          64              -2^63       2^63 - 1
+float         32              docs
+double        64              docs
