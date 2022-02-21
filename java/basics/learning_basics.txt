@@ -99,3 +99,307 @@ int           32              -2^31       2^31 - 1
 long          64              -2^63       2^63 - 1
 float         32              docs
 double        64              docs
+
+Primitive Wrapper Classes
+Primitive library includes wrapper classes for each Primitive
+support conversion and formatting tools
+
+Data Types        Wrapper Class
+byte              Byte
+short             Short
+int               Integer
+long              Long
+float             Float
+boolean           Boolean
+char              Character
+
+jshell> byte b = 1;
+b ==> 1
+
+jshell> b
+b ==> 1
+
+jshell> short sh = 1;
+sh ==> 1
+
+jshell> int i = 1;
+i ==> 1
+
+jshell> var longValue = 3_000_000_000L;
+longValue ==> 3000000000
+
+jshell> var floatValue = 300000000000.3212f;
+floatValue ==> 2.99999986E11
+
+jshell> System.out.println("the float value is" + floatValue);
+the float value is2.99999986E11
+
+jshell> byte b = 127;
+b ==> 127
+
+jshell> if (b < Byte.MAX_VALUE) {
+   ...>     b++;
+   ...> }
+
+jshell> b
+b ==> 127
+
+
+Declaring an Object Variable
+              identifier
+ClothingItem item;
+  Data Type
+
+before initialize it will contain null value
+
+Initializing an Object Variable
+
+              identifier      Constructer method
+ClothingItem item = new ClothingItem();
+  Data Type          Keyword
+
+var item = new ClothingItem(); => same result
+
+After Initializing , you can set data values and call Methods
+item.setType("Hat");
+item.displayItem();
+
+Handling currency values with BigDecimal
+
+jshell> double value = .012;
+value ==> 0.012
+
+jshell> double pSum = value + value + value;
+pSum ==> 0.036000000000000004
+
+jshell> var stringValue = Double.toString(value);
+stringValue ==> "0.012"
+
+jshell> var bigValue = new BigDecimal(stringValue);
+bigValue ==> 0.012
+
+jshell> var bigSum = bigValue.add(bigValue).add(bigValue);
+bigSum ==> 0.036
+
+jshell> var sum = bigSum.doubleValue();
+sum ==> 0.036
+
+jshell> sum
+sum ==> 0.036
+
+
+Convert Values between numeric and Types
+
+jshell> short sh = 100;
+sh ==> 100
+
+jshell> int i = sh;
+i ==> 100
+
+jshell> long longValue = i;
+longValue ==> 100
+
+jshell> short shortValue = longValue;
+|  Error:
+|  incompatible types: possible lossy conversion from long to short
+|  short shortValue = longValue;
+|                     ^-------^
+
+jshell> short shortValue = (short) longValue;
+shortValue ==> 100
+
+
+Simple Math
+
+jshell> var intValue = 56;
+intValue ==> 56
+
+jshell> var intValue2 = 56;
+intValue2 ==> 56
+
+jshell> var result1 = intValue + intValue2;
+result1 ==> 112
+
+jshell> var result2 = intValue - intValue2;
+result2 ==> 0
+
+jshell> var result3 = intValue * intValue2;
+result3 ==> 3136
+
+jshell> var result4 = intValue / intValue2;
+result4 ==> 1
+
+jshell> double  doubleValue = -3.99999;
+doubleValue ==> -3.99999
+
+jshell> long rounderd = Math.round(doubleValue);
+rounderd ==> -4
+
+jshell> double absValue = Math.abs(doubleValue);
+absValue ==> 3.99999
+
+Boolean Values
+
+jshell> boolean aValue = true;
+aValue ==> true
+
+jshell> var b1 = true
+b1 ==> true
+
+jshell> var b2 = false
+b2 ==> false
+
+jshell> boolean b3;
+b3 ==> false
+
+jshell> var b4 = !b1;
+b4 ==> false
+
+jshell> var i = 0
+i ==> 0
+
+jshell> var b5 = (i != 0)
+b5 ==> false
+
+jshell> var s = "true"
+s ==> "true"
+
+jshell> var b6 = Boolean.parseBoolean(s)
+b6 ==> true
+
+Manage character calues as Primitive
+
+jshell> char dollar = '\u0024'
+dollar ==> '$'
+
+jshell> var upper = Character.toUpperCase(c1)
+upper ==> '1'
+
+jshell> char c1 = 'a';
+c1 ==> 'a'
+
+jshell> var upper = Character.toUpperCase(c1)
+upper ==> 'A'
+
+jshell> char[] chars = {'h','e','l','l','o'}
+chars ==> char[5] { 'h', 'e', 'l', 'l', 'o' }
+
+jshell> String s = new String(chars)
+s ==> "hello"
+
+jshell> var charArray = s.toCharArray()
+charArray ==> char[5] { 'h', 'e', 'l', 'l', 'o' }
+
+Types of Operators
+
+Equality
+Assignment
+Mathematical
+Logical
+Ternary
+
+Assignment
+
+int intValue; //defaults to 0
+var intValue = 10;
+                simple Assignment
+
+Assignment and simple Math
+var new value = intValue + 5;  15
+var new value = intValue - 5;  5
+var new value = intValue * 5;  50
+var new value = intValue / 5;  2
+var new value = intValue % 5; //remainder
+
+More Assignments
+intValue ++;  11
+intValue --;  9
+intValue += 5; 15
+intValue -= 5;  5
+intValue *= 5; 50
+intValue /= 5;  2
+
+Postfix and PreFix Incrementing
+
+var intValue = 10;
+                initial value
+
+Postfix
+System.out.println(intValue ++)
+
+PreFix
+Sytem.out.println(++ intValue);
+
+Equality Operators
+if (this == that) {
+   System.out.println("They Match!");
+}
+
+InEquality
+if (this != that) {
+  System.out.println("No match!")
+}
+
+comparing values
+>             greater than
+<             less than
+>=            greater than or equal
+<=            less than or equal
+isinstanceof  class identification
+
+Comparing strings
+do not use == to compare strings
+
+String s1 = "Hello";
+String s2 = "Hello";
+if (s1.equals(s2)) {
+  System.out.println("They match");
+} else {
+  System.out.println("No match")
+}
+
+Logical Operators
+Operator  Purpose
+&&        AND
+||        OR
+?=        Ternary(shorthand if-then)
+
+var message = (i == 1) //bolean test
+      ? "There is 1"   //result if true
+      : "There are " + i; //result if false
+System.out.println(message);
+
+Manage strings values
+declare and initialize string values
+jshell> String s1 = "This is a string!"
+s1 ==> "This is a string!"
+
+jshell> var s2 = "This is another string!"
+s2 ==> "This is another string!"
+
+jshell> var s3 = new String("This is also a string!")
+s3 ==> "This is also a string!"
+
+jshell> var chars = s1.toCharArray();
+chars ==> char[17] { 'T', 'h', 'i', 's', ' ', 'i', 's', ' ' ...  'r', 'i', 'n', 'g', '!' }
+
+jshell> String S4 = "Shirt size: ";
+S4 ==> "Shirt size: "
+
+jshell> String S5 = "M";
+S5 ==> "M"
+
+jshell> String s6 = S4 + S5 + ", Qty: " + 4
+s6 ==> "Shirt size: M, Qty: 4"
+
+jshell> s6 += ", very elegant"
+$8 ==> "Shirt size: M, Qty: 4, very elegant"
+
+jshell> var upper = s6.toUpperCase()
+upper ==> "SHIRT SIZE: M, QTY: 4, VERY ELEGANT"
+
+jshell> var charAt = s6.charAt(4)
+charAt ==> 't'
+
+jshell> var bytes = s6.getBytes()
+bytes ==> byte[35] { 83, 104, 105, 114, 116, 32, 115, 105,  ... , 101, 103, 97, 110, 116 }
