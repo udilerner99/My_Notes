@@ -1,14 +1,15 @@
 package my_package;
 
+import java.util.Scanner;
+
 public class Review {
 
 	public static void main(String[] args) {
-
-		MyClass mc = new MyClass();
-		mc.myMethod();
-		System.out.println(mc.myInt);
-		mc.myInt = 10;
-		System.out.println(mc.myInt);
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter your name: ");
+		String name = scanner.nextLine();
+		System.out.println("Your name is: " + name);
+		scanner.close();
 	}
 
 }
