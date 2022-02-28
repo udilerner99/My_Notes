@@ -3,13 +3,13 @@ package my_package;
 public class Review {
 
 	public static void main(String[] args) {
-		String[] breakfast = new String[3];
-		breakfast[0] = "Oatmeal";
-		breakfast[1] = "Milk";
-		breakfast[2] = "Eggs";
+		boolean statment1 = 1 == 1;
+		boolean statment2 = 1 > 3;
 
-		for (int i = 0; i < breakfast.length; i++) {
-			System.out.println(breakfast[i]);
+		if (statment1 && statment2) {
+			System.out.println("Statement is true");
+		} else {
+			System.out.println("Statement is false");
 		}
 
 	}
