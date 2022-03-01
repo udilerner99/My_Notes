@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="MySwingApp:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/MySwingApp_jar</output-path>
+    <root id="archive" name="MySwingApp.jar">
+      <element id="module-output" name="MySwingApp" />
+    </root>
+  </artifact>
+</component>
