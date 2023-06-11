@@ -24,8 +24,10 @@ In this demo project i'll demonstrate Following procedure:
     .
     ├── nyc_taxi_demo              # main project folder
     ├──── env_nyc                    # python virtual environment
-    ├──── nyc_data_ingestion_engine   # python application for extracting source data
+    ├──── Ingestion   # python application for extracting source data
     ├──── nyc_dbt                     # dbt project for nyc data
+    ├──── nyc_taxi_raw_source # landing source data files
+    ├──── nyc_taxi_sample_data # sample data for profiling
     └── README.md
 
 ## Data Profiling
