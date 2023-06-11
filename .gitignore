@@ -13,6 +13,8 @@ git/access.log
 git/file_with_text.txt
 .DS_Store
 
+ .vscode/
+nyc_yellow_data.db
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
