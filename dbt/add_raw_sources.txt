@@ -1,0 +1,9 @@
+https://docs.getdbt.com/docs/building-a-dbt-project/using-sources
+
+source are yml files.
+
+default location for sources is  under models
+
+add a folder for a new source
+
+and the source for your model

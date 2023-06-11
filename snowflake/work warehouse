@@ -1,0 +1,101 @@
+
+//switch warehouse auto_suspend AUTO_RESUME off for poc
+//1.show all warehouses
+SHOW WAREHOUSES;
+
+//COMPUTE_WH
+//DEV_WH_USAGE_IMART
+//PC_DBT_WH
+
+//suspend all warehouses
+alter warehouse COMPUTE_WH suspend;
+alter warehouse DEV_WH_USAGE_IMART suspend;
+alter warehouse PC_DBT_WH suspend;
+
+//2.switch auto resume off for checking credit usage on specific period
+alter warehouse COMPUTE_WH set AUTO_RESUME = FALSE;
+alter warehouse DEV_WH_USAGE_IMART set AUTO_RESUME = FALSE;
+alter warehouse PC_DBT_WH set AUTO_RESUME = FALSE;
+
+alter warehouse COMPUTE_WH set AUTO_SUSPEND = 0;
+alter warehouse DEV_WH_USAGE_IMART set AUTO_SUSPEND = 0;
+alter warehouse PC_DBT_WH set AUTO_SUSPEND = 0;
+
+//3.resuming only COMPUTE_WH
+alter warehouse COMPUTE_WH resume;
+alter warehouse DEV_WH_USAGE_IMART resume;
+alter warehouse PC_DBT_WH resume;
+
+//checking warehouse state
+//COMPUTE_WH STARTED
+
+//checking hourly warehouse usage for COMPUTE_WH
+select *
+from table(information_schema.warehouse_metering_history('2022-06-11', '2022-06-11'));
+
+select current_timestamp(2);
+
+select *
+from table(information_schema.warehouse_metering_history('2022-06-11', '2022-06-12', 'DEV_WH_USAGE_IMART'));
+
+//running query on COMPUTE_WH
+use database "SNOWFLAKE_SAMPLE_DATA";
+
+//running query 15,000,000
+select count(*) from "TPCH_SF10"."ORDERS";
+select sum(O_TOTALPRICe) from "TPCH_SF10"."ORDERS";
+
+
+select count(*) from "TPCH_SF10"."ORDERS";
+select sum(O_TOTALPRICe) from "TPCH_SF10"."ORDERS";
+
+select count(*) from "TPCH_SF10"."ORDERS";
+select sum(O_TOTALPRICe) from "TPCH_SF10"."ORDERS";
+
+
+select count(*) from "TPCH_SF10"."ORDERS";
+select sum(O_TOTALPRICe) from "TPCH_SF10"."ORDERS";
+
+select count(*) from "TPCH_SF10"."ORDERS";
+select sum(O_TOTALPRICe) from "TPCH_SF10"."ORDERS";
+
+
+select count(*) from "TPCH_SF10"."ORDERS";
+select sum(O_TOTALPRICe) from "TPCH_SF10"."ORDERS";
+
+select count(*) from "TPCH_SF10"."ORDERS";
+select sum(O_TOTALPRICe) from "TPCH_SF10"."ORDERS";
+
+
+select count(*) from "TPCH_SF10"."ORDERS";
+select sum(O_TOTALPRICe) from "TPCH_SF10"."ORDERS";
+
+select count(*) from "TPCH_SF10"."ORDERS";
+select sum(O_TOTALPRICe) from "TPCH_SF10"."ORDERS";
+
+
+select count(*) from "TPCH_SF10"."ORDERS";
+select sum(O_TOTALPRICe) from "TPCH_SF10"."ORDERS";
+
+select count(*) from "TPCH_SF10"."ORDERS";
+select sum(O_TOTALPRICe) from "TPCH_SF10"."ORDERS";
+
+
+select count(*) from "TPCH_SF10"."ORDERS";
+select sum(O_TOTALPRICe) from "TPCH_SF10"."ORDERS";
+
+select count(*) from "TPCH_SF10"."ORDERS";
+select sum(O_TOTALPRICe) from "TPCH_SF10"."ORDERS";
+
+
+select count(*) from "TPCH_SF10"."ORDERS";
+select sum(O_TOTALPRICe) from "TPCH_SF10"."ORDERS";
+
+select count(*) from "TPCH_SF10"."ORDERS";
+select sum(O_TOTALPRICe) from "TPCH_SF10"."ORDERS";
+
+
+select count(*) from "TPCH_SF10"."ORDERS";
+select sum(O_TOTALPRICe) from "TPCH_SF10"."ORDERS";
+
+select  count(distinct O_CUSTKEY) from "TPCH_SF10"."ORDERS";

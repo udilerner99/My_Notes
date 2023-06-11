@@ -1,0 +1,5 @@
+https://docs.getdbt.com/docs/building-a-dbt-project/building-models/using-custom-schemas
+
+dbt by default use the schema in the profile and concatenate it with the schema defined in model schema.
+
+in order to fix this we'll need to use custom macro

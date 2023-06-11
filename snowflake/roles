@@ -1,0 +1,113 @@
+//Role Hierarchy: Access control designed to inherit permissions
+
+//Custom Roles:
+// Analyst: dev_wh_usage_imart usage, read only on dev_biz_db
+// Developer: [Analyst] + read only on fivetran_stg_area
+// CI: [Analyst] + [Developer] + insert/updates on raw_db
+
+// Analyst > Developer > CI > AccountAdmin
+
+//----------------------
+//---- Analyst Role ----
+//----------------------
+use role accountadmin;
+
+//create role
+create role analyst;
+
+//verify no grants
+show grants to role analyst;
+
+//grant role to my user
+grant role analyst to user udilerner;
+use role analyst;
+
+show schemas;
+//grant warehouse DEV_WH_USAGE_IMART
+use role accountadmin;
+grant usage on warehouse DEV_WH_USAGE_IMART to role analyst;
+
+//add read access to DEV_BIZ_DB
+use role accountadmin;
+grant usage on DATABASE "DEV_BIZ_DB"  to role analyst;
+grant usage on schema "DEV_BIZ_DB"."TEST_STG_REA" to role analyst;
+grant select on all tables in schema DEV_BIZ_DB.TEST_STG_REA to role analyst;
+
+//confirm ability to select
+select * from "DEV_BIZ_DB"."TEST_STG_REA"."STG_TEST_USAGE";
+
+//compare roles
+use role analyst;
+use role accountadmin;
+show grants to role analyst;
+
+
+//------------------------
+//---- developer Role ----
+//------------------------
+use role accountadmin;
+
+//create role
+create role developer;
+
+//Verify no grants
+show grants to role developer;
+
+//grant role to my user
+grant role developer to user udilerner;
+use role developer;
+
+//Inherit Analyst permissions
+use role accountadmin;
+grant role analyst to role developer;
+
+//create schema dev on PC_DBT_DB
+use role accountadmin;
+use database "PC_DBT_DB";
+create schema "dev";
+
+//give permissions to
+grant usage on database "PC_DBT_DB" to role developer;
+grant usage on schema "PC_DBT_DB"."dev" to role developer;
+grant select on "PC_DBT_DB"."dev"."TEST_DEV_T" to role developer;
+
+//compare roles
+use role developer;
+use role analyst;
+use role accountadmin;
+
+
+//----------------------
+//---- CI Role      ----
+//----------------------
+
+//create role
+use role accountadmin;
+create role ci;
+
+//verify no grants
+show grants to role ci;
+
+//grant role to my user
+grant role ci to user udilerner;
+use role ci;
+
+//Inherit developer (and Analyst) permissions
+use role accountadmin;
+grant role developer to role ci;
+
+//give permissions to raw_db
+use database "RAW_DB";
+create schema "staging";
+grant usage on database "RAW_DB" to role ci;
+grant usage on schema "RAW_DB"."staging" to role ci;
+
+//give inseret/update permissions on "RAW_DB"."staging"
+grant insert on all tables in schema "RAW_DB"."staging" to role ci;
+grant update on all tables in schema "RAW_DB"."staging" to role ci;
+
+//compare roles
+use role ci;
+use role developer;
+use role analyst;
+use role accountadmin;

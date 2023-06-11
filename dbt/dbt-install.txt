@@ -1,0 +1,11 @@
+install dbt
+=================
+
+1.create local folder for the project
+2.in the folder create git repo (git init)
+3.follow https://docs.getdbt.com/dbt-cli/install/pip
+
+follow https://docs.python-guide.org/dev/virtualenvs/
+
+
+source venv/bin/activate

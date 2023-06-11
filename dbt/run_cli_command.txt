@@ -1,0 +1,2 @@
+run dbt with specific model and target specified in profile
+ dbt run --models tag:raw --target raw_stage_dev
