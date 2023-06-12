@@ -188,4 +188,69 @@ create table f_nyc_yellow_agg as SELECT strftime(tpep_pickup_datetime, '%Y/%m') 
 └──────────────────────────────────┘
 
 ### Step 4
-The option now is to handle the sql code is to use dbt
+For demonstration of working with dbt, i've decided to use a snowflake account, setting a free account is easy and it will grant you 30 free days of usage.
+
+#### set the database
+1. i'll use the db_init.sql script to manage the snowflake database.
+2. once database and schemas lets create the source table on raw_src schema.
+    (Can be found on the nyc_yellow_taxi_t)
+3. using snowflake interface we can quickly upload files into tables, ofcourse we could also use cli command to copy the data.
+4. now that we have a snowflake database with base schema and source table ready , lets create the dbt project.
+    just create a new folder to store the dbt project files, and run dbt init (assuming you have dbt installed)
+that's it we are ready, we can check connection :
+dbt debug                                                                                                                  ✔  env_nyc  
+08:43:34  Running with dbt=1.5.0
+08:43:34  dbt version: 1.5.0
+08:43:34  python version: 3.10.4
+08:43:34  python path: /Users/udilerner/.pyenv/versions/3.10.4/bin/python
+08:43:34  os info: macOS-13.4-arm64-arm-64bit
+08:43:34  Using profiles.yml file at /Users/udilerner/.dbt/profiles.yml
+08:43:34  Using dbt_project.yml file at /Users/udilerner/prsnl_projects/My_Notes/nyc_taxi_demo/nyc_taxi_dbt/dbt_project.yml
+08:43:34  Configuration:
+08:43:35    profiles.yml file [OK found and valid]
+08:43:35    dbt_project.yml file [OK found and valid]
+08:43:35  Required dependencies:
+08:43:35   - git [OK found]
+
+08:43:35  Connection:
+08:43:35    account: mob96890
+08:43:35    user: udilr
+08:43:35    database: taxi_data
+08:43:35    schema: raw_stage
+08:43:35    warehouse: compute_wh
+08:43:35    role: accountadmin
+08:43:35    client_session_keep_alive: False
+08:43:35    query_tag: None
+08:43:37    Connection test: [OK connection ok]
+
+08:43:37  All checks passed!
+
+5. now that we connected with dbt we can start write our models.
+6. lets start with defining our source metadata on the sources_metadata.yml file.
+using get_ddl we can get source table schema for the metadata creation:
+
+select get_ddl('table','TAXI_DATA.RAW_SRC.RAW_NYC_YELLOW_TAXI_T');
+
+create or replace TABLE RAW_NYC_YELLOW_TAXI_T (
+	VENDORID NUMBER(38,0),
+	TPEP_PICKUP_DATETIME TIMESTAMP_NTZ(9),
+	TPEP_DROPOFF_DATETIME TIMESTAMP_NTZ(9),
+	PASSENGER_COUNT NUMBER(38,0),
+	TRIP_DISTANCE NUMBER(38,0),
+	RATECODEID NUMBER(38,0),
+	STORE_AND_FWD_FLAG VARCHAR(16777216),
+	PULOCATIONID NUMBER(38,0),
+	DOLOCATIONID NUMBER(38,0),
+	PAYMENT_TYPE NUMBER(38,0),
+	FARE_AMOUNT FLOAT,
+	EXTRA FLOAT,
+	MTA_TAX FLOAT,
+	TIP_AMOUNT FLOAT,
+	TOLLS_AMOUNT FLOAT,
+	IMPROVEMENT_SURCHARGE FLOAT,
+	TOTAL_AMOUNT FLOAT,
+	CONGESTION_SURCHARGE FLOAT,
+	AIRPORT_FEE FLOAT
+);
+7.lets start with a model on the raw_stage to clean/confirm and cast our table columns.
+this model will materialize as a view.

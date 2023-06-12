@@ -1,0 +1,49 @@
+version: 2
+
+sources:
+  - name: taxi_src
+    description: yellow taxi drivers source data
+    database: taxi_data
+    schema: raw_src
+    tables:
+      - name: raw_nyc_yellow_taxi_t
+        description: raw source data downloaded from the site
+        columns:
+          - name: vendorid
+            description: na
+          - name: tpep_pickup_datetime
+            description: na
+          - name: tpep_dropoff_datetime
+            description: na
+          - name: passenger_count
+            description: na
+          - name: trip_distance
+            description: na
+          - name: ratecodeid
+            description: na
+          - name: store_and_fwd_flag
+            description: na
+          - name: pulocationid
+            description: na
+          - name: dolocationid
+            description: na
+          - name: payment_type
+            description: na
+          - name: fare_amount
+            description: na
+          - name: extra
+            description: na
+          - name: mta_tax
+            description: na
+          - name: tip_amount
+            description: na
+          - name: tolls_amount
+            description: na
+          - name: improvement_surcharge
+            description: na
+          - name: total_amount
+            description: na
+          - name: congestion_surcharge
+            description: na
+          - name: airport_fee
+            description: na
