@@ -6,6 +6,11 @@ name: 'taxi_data'
 version: '1.0.0'
 config-version: 2
 
+quoting:
+  database: false
+  schema: false
+  identifier: false
+
 # This setting configures which "profile" dbt uses for this project.
 profile: 'taxi_data'
 
@@ -35,3 +40,15 @@ models:
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: view
+    raw_stage:
+      +tags: raw_stage
+      +schema: raw_stage
+      +materialized: view
+    stage:
+      +tags: stage
+      +schema: stage
+      +materialized: view
+    warehouse:
+      +tags: warehouse
+      +schema: warehouse
+      +materialized: incremental

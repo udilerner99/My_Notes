@@ -225,6 +225,8 @@ dbt debug                                                                       
 
 08:43:37  All checks passed!
 
+when working in vs code i recommend using the snowflake extension and dbt power user extension.
+
 5. now that we connected with dbt we can start write our models.
 6. lets start with defining our source metadata on the sources_metadata.yml file.
 using get_ddl we can get source table schema for the metadata creation:
@@ -252,5 +254,31 @@ create or replace TABLE RAW_NYC_YELLOW_TAXI_T (
 	CONGESTION_SURCHARGE FLOAT,
 	AIRPORT_FEE FLOAT
 );
-7.lets start with a model on the raw_stage to clean/confirm and cast our table columns.
+7. lets start with a model on the raw_stage to clean/confirm and cast our table columns.
 this model will materialize as a view.
+
+At this point it's also worth mentioning that i've added an fk_audit column, this will help us trace the job that loaded the records.
+ '{{ invocation_id }}' as fk_audit
+
+
+8. now that we have raw_stage view ready, lets move on to the staging layer.
+usually this layer will serve as layer to connect different source tables and join them into confirmed dimensions or fact tables.
+
+in our case we'll have one fact table, the id's as mentioned will serve as degenerate dimensions.
+
+9. moving to the fact table, we assume that the source is behaving as a classic transactional event table, each record represent a new "event" in our case a taxi driver picked up a passenger and then drop him off, and that's the "end of life" for the transaction.
+
+assuming this we can materialize the fact table as incremental and filtering on new records only using the dates columns.
+
+once we run the fact table lets count the number of records:
+
+select
+count(*)
+from warehouse.f_taxi_rides_t;
+3066766
+
+now lets try to rerun the build of the fact table but this time without the -full-refresh flag for incremental load only, we expect the the number of records will remain the same.
+
+and it does!
+10. lets create an aggregated table for daily reports.
+we want to count each day the summarize of the rides amount & passenger count.
