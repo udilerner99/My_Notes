@@ -1,0 +1,94 @@
+version: 2
+
+models:
+  - name: f_taxi_rides_t
+    description: our taxi rides data
+    columns:
+      - name: id_vendor
+        description: name
+        tests:
+          - not_null
+      - name: id_rate_code
+        description: name
+        tests:
+          - not_null
+      - name: id_pu_location
+        description: name
+        tests:
+          - not_null
+      - name: id_do_location
+        description: name
+        tests:
+          - not_null
+      - name: id_payment_type
+        description: name
+        tests:
+          - not_null
+      - name: ind_store_and_fwd_flag
+        description: name
+        tests:
+          - not_null
+      - name: msr_fare_amount
+        description: name
+        tests:
+          - not_null
+      - name: msr_extra
+        description: name
+        tests:
+          - not_null
+      - name: msr_mta_tax
+        description: name
+        tests:
+          - not_null
+      - name: msr_tip_amount
+        description: name
+        tests:
+          - not_null
+      - name: msr_tolls_amount
+        description: name
+        tests:
+          - not_null
+      - name: msr_improvement_surcharge
+        description: name
+        tests:
+          - not_null
+      - name: msr_total_amount
+        description: name
+        tests:
+          - not_null
+      - name: msr_congestion_surcharge
+        description: name
+        tests:
+          - not_null
+      - name: msr_airport_fee
+        description: name
+        tests:
+          - not_null
+      - name: msr_passenger_count
+        description: name
+        tests:
+          - not_null
+      - name: msr_trip_distance
+        description: name
+        tests:
+          - not_null
+      - name: dt_tpep_pickup
+        description: name
+        tests:
+          - not_null
+      - name: dt_pep_dropoff_datetime
+        description: name
+        tests:
+          - not_null
+      - name: tm_pep_pickup_datetime
+        description: name
+        tests:
+          - not_null
+      - name: tm_pep_dropoff_datetime
+        description: name
+        tests:
+          - not_null
+      - name: fk_audit
+        description: name
+        tests:
+          - not_null

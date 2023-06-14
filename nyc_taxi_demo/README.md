@@ -282,3 +282,5 @@ now lets try to rerun the build of the fact table but this time without the -ful
 and it does!
 10. lets create an aggregated table for daily reports.
 we want to count each day the summarize of the rides amount & passenger count.
+
+11. also added metadata file for the fact with tests of not_null
