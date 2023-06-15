@@ -284,3 +284,12 @@ and it does!
 we want to count each day the summarize of the rides amount & passenger count.
 
 11. also added metadata file for the fact with tests of not_null
+
+### Step 5
+lets change the ingestion engine to run in a multi thread environment in order to download the source files more efficiently.
+
+we can utilize Python's concurrent.futures module, which provides a high-level interface for asynchronously executing functions.
+
+The script uses a ThreadPoolExecutor to manage a pool of worker threads. It iterates over the months and years, constructs the URL for each month, and submits the download task to the executor asynchronously using executor.submit(). This allows the files to be downloaded in parallel.
+
+After submitting all tasks, the script waits for all tasks to complete by calling executor.shutdown(wait=True). This ensures that the script does not exit before all downloads are finished.
