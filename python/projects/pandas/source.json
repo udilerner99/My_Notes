@@ -1,0 +1,29 @@
+[
+    {
+        "id":1,
+        "name":"ALICE",
+        "age":28,
+        "department":"Finance",
+        "indication":"Y",
+        "average_age":29.0,
+        "age_indication":"N"
+    },
+    {
+        "id":2,
+        "name":"BOB",
+        "age":34,
+        "department":"Engineering",
+        "indication":"N",
+        "average_age":29.0,
+        "age_indication":"Y"
+    },
+    {
+        "id":3,
+        "name":"CHARLIE",
+        "age":25,
+        "department":"Marketing",
+        "indication":"N",
+        "average_age":29.0,
+        "age_indication":"N"
+    }
+]

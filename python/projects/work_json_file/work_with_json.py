@@ -25,3 +25,9 @@ with open("D:\\workfiles\\my_notes\\My_Notes\\junk\\source.json") as f:
 with open("D:\\workfiles\\my_notes\\My_Notes\\junk\\source.json", "w") as f:
     # Save the modified data back to the file
     json.dump(d, f, indent=4)
+
+[
+    {"id": 1,"name": "ALICE","age": 28,"department": "Finance"},
+    {"id": 2,"name": "BOB","age": 34,"department": "Engineering"},
+    {"id": 3,"name": "CHARLIE","age": 25,"department": "Marketing"}
+]
