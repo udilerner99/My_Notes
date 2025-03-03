@@ -8,5 +8,8 @@
             "group": "duckdb",
             "database": "${workspaceFolder:My_Notes}/nyc_taxi_demo/duckdb_data/nyc_yellow_data.db"
         }
+    ],
+    "cSpell.words": [
+        "reuiqrments"
     ]
 }
