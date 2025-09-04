@@ -1,0 +1,263 @@
+{
+    "Users": [
+        {
+            "Path": "/",
+            "UserName": "Andrew_B",
+            "UserId": "AIDATOPRMNY7VHOLH3MLH",
+            "Arn": "arn:aws:iam::237266300479:user/Andrew_B",
+            "CreateDate": "2025-06-11T14:52:12+00:00",
+            "PasswordLastUsed": "2025-06-11T15:11:50+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "Aram-playground",
+            "UserId": "AIDATOPRMNY77PVBSLDHP",
+            "Arn": "arn:aws:iam::237266300479:user/Aram-playground",
+            "CreateDate": "2024-09-08T14:36:49+00:00",
+            "PasswordLastUsed": "2025-04-02T10:30:50+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "Aramplay",
+            "UserId": "AIDATOPRMNY733TUJMAVX",
+            "Arn": "arn:aws:iam::237266300479:user/Aramplay",
+            "CreateDate": "2024-09-09T12:20:44+00:00",
+            "PasswordLastUsed": "2024-09-09T14:26:02+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "Aram_through_CLI",
+            "UserId": "AIDATOPRMNY7Y3CGFLM5W",
+            "Arn": "arn:aws:iam::237266300479:user/Aram_through_CLI",
+            "CreateDate": "2024-09-09T15:06:10+00:00",
+            "PasswordLastUsed": "2025-04-02T10:22:03+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "candidate-user",
+            "UserId": "AIDATOPRMNY7ZQIXEHSOT",
+            "Arn": "arn:aws:iam::237266300479:user/candidate-user",
+            "CreateDate": "2024-06-02T06:54:07+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "charles-admin",
+            "UserId": "AIDATOPRMNY7SBZGEKWYZ",
+            "Arn": "arn:aws:iam::237266300479:user/charles-admin",
+            "CreateDate": "2024-02-21T12:32:42+00:00",
+            "PasswordLastUsed": "2024-03-17T13:29:33+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "ci-user",
+            "UserId": "AIDATOPRMNY7VSYGUGEV6",
+            "Arn": "arn:aws:iam::237266300479:user/ci-user",
+            "CreateDate": "2023-10-11T11:57:28+00:00",
+            "PasswordLastUsed": "2023-12-27T07:49:24+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "cloudtrail-athena-querier",
+            "UserId": "AIDATOPRMNY7ZGWGGY673",
+            "Arn": "arn:aws:iam::237266300479:user/cloudtrail-athena-querier",
+            "CreateDate": "2023-10-11T10:26:45+00:00",
+            "PasswordLastUsed": "2025-04-28T06:04:39+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "dana",
+            "UserId": "AIDATOPRMNY7SYGWAQA3P",
+            "Arn": "arn:aws:iam::237266300479:user/dana",
+            "CreateDate": "2025-02-25T15:17:26+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "danz-bedrock-testing",
+            "UserId": "AIDATOPRMNY76Q7N63E4I",
+            "Arn": "arn:aws:iam::237266300479:user/danz-bedrock-testing",
+            "CreateDate": "2025-01-06T09:00:24+00:00",
+            "PasswordLastUsed": "2025-01-13T13:58:22+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "gil-admin-test",
+            "UserId": "AIDATOPRMNY77UT5CRVIM",
+            "Arn": "arn:aws:iam::237266300479:user/gil-admin-test",
+            "CreateDate": "2025-04-22T08:01:56+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "Gili-Sandbox",
+            "UserId": "AIDATOPRMNY7WOLVB7UJE",
+            "Arn": "arn:aws:iam::237266300479:user/Gili-Sandbox",
+            "CreateDate": "2025-06-09T13:57:39+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "gili_onboarding",
+            "UserId": "AIDATOPRMNY7THRNEZX7Z",
+            "Arn": "arn:aws:iam::237266300479:user/gili_onboarding",
+            "CreateDate": "2025-06-10T10:49:35+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "iac-testing-least-privilege",
+            "UserId": "AIDATOPRMNY74BOBHAAZM",
+            "Arn": "arn:aws:iam::237266300479:user/iac-testing-least-privilege",
+            "CreateDate": "2025-01-13T11:41:50+00:00",
+            "PasswordLastUsed": "2025-01-13T13:57:12+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "iam-user-with-group-network-policy",
+            "UserId": "AIDATOPRMNY7674JABHO7",
+            "Arn": "arn:aws:iam::237266300479:user/iam-user-with-group-network-policy",
+            "CreateDate": "2024-07-10T08:27:31+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "iam-user-with-inline-network-policy",
+            "UserId": "AIDATOPRMNY7YFTZ3FSH4",
+            "Arn": "arn:aws:iam::237266300479:user/iam-user-with-inline-network-policy",
+            "CreateDate": "2024-07-10T08:24:20+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "IdoG",
+            "UserId": "AIDATOPRMNY73NOPOUWU3",
+            "Arn": "arn:aws:iam::237266300479:user/IdoG",
+            "CreateDate": "2024-10-06T08:49:30+00:00",
+            "PasswordLastUsed": "2024-10-07T07:28:35+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "IdoGOktaUser",
+            "UserId": "AIDATOPRMNY77RXSI4KCK",
+            "Arn": "arn:aws:iam::237266300479:user/IdoGOktaUser",
+            "CreateDate": "2024-10-07T13:58:41+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "IdoGplayaround",
+            "UserId": "AIDATOPRMNY7YNF5CD3EF",
+            "Arn": "arn:aws:iam::237266300479:user/IdoGplayaround",
+            "CreateDate": "2024-10-06T09:10:32+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "JumpcloudIntegration",
+            "UserId": "AIDATOPRMNY76BT637T7Q",
+            "Arn": "arn:aws:iam::237266300479:user/JumpcloudIntegration",
+            "CreateDate": "2023-07-12T13:35:57+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "keren-sandbox-user",
+            "UserId": "AIDATOPRMNY7WAEXQLQR7",
+            "Arn": "arn:aws:iam::237266300479:user/keren-sandbox-user",
+            "CreateDate": "2024-05-06T08:19:07+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "management-account-breakglass-user",
+            "UserId": "AIDATOPRMNY7S3N3HJDU4",
+            "Arn": "arn:aws:iam::237266300479:user/management-account-breakglass-user",
+            "CreateDate": "2024-03-20T07:28:17+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "Michael_S",
+            "UserId": "AIDATOPRMNY7T7UZD5RYD",
+            "Arn": "arn:aws:iam::237266300479:user/Michael_S",
+            "CreateDate": "2025-06-11T14:51:03+00:00",
+            "PasswordLastUsed": "2025-06-12T08:14:33+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "OktaSSOUser",
+            "UserId": "AIDATOPRMNY7WAB63KLYS",
+            "Arn": "arn:aws:iam::237266300479:user/OktaSSOUser",
+            "CreateDate": "2023-09-05T15:31:08+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "research-user",
+            "UserId": "AIDATOPRMNY7SSACONFT7",
+            "Arn": "arn:aws:iam::237266300479:user/research-user",
+            "CreateDate": "2023-10-10T14:39:26+00:00",
+            "PasswordLastUsed": "2024-01-10T08:41:57+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "rsync-test-2",
+            "UserId": "AIDATOPRMNY7YR53EZZH2",
+            "Arn": "arn:aws:iam::237266300479:user/rsync-test-2",
+            "CreateDate": "2024-07-02T08:18:16+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "rsync-test-user",
+            "UserId": "AIDATOPRMNY73S7T4IFIA",
+            "Arn": "arn:aws:iam::237266300479:user/rsync-test-user",
+            "CreateDate": "2024-07-02T08:13:09+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "Sharon_Onboarding",
+            "UserId": "AIDATOPRMNY7RQNCEI7DK",
+            "Arn": "arn:aws:iam::237266300479:user/Sharon_Onboarding",
+            "CreateDate": "2024-08-06T11:14:51+00:00",
+            "PasswordLastUsed": "2024-08-06T11:18:42+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "snowflake-user",
+            "UserId": "AIDATOPRMNY7VZFGPPP3T",
+            "Arn": "arn:aws:iam::237266300479:user/snowflake-user",
+            "CreateDate": "2024-02-21T09:09:25+00:00",
+            "PasswordLastUsed": "2024-02-21T09:10:36+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "temp-employee",
+            "UserId": "AIDATOPRMNY7VOC7YDSU3",
+            "Arn": "arn:aws:iam::237266300479:user/temp-employee",
+            "CreateDate": "2024-01-01T09:42:05+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "terraform-test",
+            "UserId": "AIDATOPRMNY7X7IIBHDMD",
+            "Arn": "arn:aws:iam::237266300479:user/terraform-test",
+            "CreateDate": "2023-10-22T13:35:01+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "test-user",
+            "UserId": "AIDATOPRMNY7W2SHIWW3E",
+            "Arn": "arn:aws:iam::237266300479:user/test-user",
+            "CreateDate": "2025-06-11T11:43:50+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "test-user-gili",
+            "UserId": "AIDATOPRMNY735JNRRQOH",
+            "Arn": "arn:aws:iam::237266300479:user/test-user-gili",
+            "CreateDate": "2025-06-11T11:44:00+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "TEST_USER_OFFBOARDED_TEST",
+            "UserId": "AIDATOPRMNY7RB4U7D4B7",
+            "Arn": "arn:aws:iam::237266300479:user/TEST_USER_OFFBOARDED_TEST",
+            "CreateDate": "2024-05-01T07:03:35+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "yuval-test",
+            "UserId": "AIDATOPRMNY753Q2KNYJB",
+            "Arn": "arn:aws:iam::237266300479:user/yuval-test",
+            "CreateDate": "2025-03-09T14:44:14+00:00"
+        }
+    ]
+}

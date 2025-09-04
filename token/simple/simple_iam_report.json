@@ -1,0 +1,306 @@
+{
+  "assessment_time": "2025-09-04T11:41:03.860445",
+  "total_findings": 60,
+  "findings": [
+    {
+      "time_found": "2025-09-04T11:40:43.098429",
+      "identity_name": "Andrew_B",
+      "issue_name": "MFA not enabled"
+    },
+    {
+      "time_found": "2025-09-04T11:40:43.098429",
+      "identity_name": "Aramplay",
+      "issue_name": "MFA not enabled"
+    },
+    {
+      "time_found": "2025-09-04T11:40:43.098429",
+      "identity_name": "Aram_through_CLI",
+      "issue_name": "MFA not enabled"
+    },
+    {
+      "time_found": "2025-09-04T11:40:43.098429",
+      "identity_name": "candidate-user",
+      "issue_name": "MFA not enabled"
+    },
+    {
+      "time_found": "2025-09-04T11:40:43.098429",
+      "identity_name": "charles-admin",
+      "issue_name": "MFA not enabled"
+    },
+    {
+      "time_found": "2025-09-04T11:40:43.098429",
+      "identity_name": "dana",
+      "issue_name": "MFA not enabled"
+    },
+    {
+      "time_found": "2025-09-04T11:40:43.098429",
+      "identity_name": "danz-bedrock-testing",
+      "issue_name": "MFA not enabled"
+    },
+    {
+      "time_found": "2025-09-04T11:40:43.098429",
+      "identity_name": "gil-admin-test",
+      "issue_name": "MFA not enabled"
+    },
+    {
+      "time_found": "2025-09-04T11:40:43.098429",
+      "identity_name": "Gili-Sandbox",
+      "issue_name": "MFA not enabled"
+    },
+    {
+      "time_found": "2025-09-04T11:40:43.098429",
+      "identity_name": "gili_onboarding",
+      "issue_name": "MFA not enabled"
+    },
+    {
+      "time_found": "2025-09-04T11:40:43.098429",
+      "identity_name": "iac-testing-least-privilege",
+      "issue_name": "MFA not enabled"
+    },
+    {
+      "time_found": "2025-09-04T11:40:43.098429",
+      "identity_name": "iam-user-with-group-network-policy",
+      "issue_name": "MFA not enabled"
+    },
+    {
+      "time_found": "2025-09-04T11:40:43.098429",
+      "identity_name": "iam-user-with-inline-network-policy",
+      "issue_name": "MFA not enabled"
+    },
+    {
+      "time_found": "2025-09-04T11:40:43.098429",
+      "identity_name": "IdoG",
+      "issue_name": "MFA not enabled"
+    },
+    {
+      "time_found": "2025-09-04T11:40:43.098429",
+      "identity_name": "IdoGOktaUser",
+      "issue_name": "MFA not enabled"
+    },
+    {
+      "time_found": "2025-09-04T11:40:43.098429",
+      "identity_name": "IdoGplayaround",
+      "issue_name": "MFA not enabled"
+    },
+    {
+      "time_found": "2025-09-04T11:40:43.098429",
+      "identity_name": "JumpcloudIntegration",
+      "issue_name": "MFA not enabled"
+    },
+    {
+      "time_found": "2025-09-04T11:40:43.098429",
+      "identity_name": "keren-sandbox-user",
+      "issue_name": "MFA not enabled"
+    },
+    {
+      "time_found": "2025-09-04T11:40:43.098429",
+      "identity_name": "management-account-breakglass-user",
+      "issue_name": "MFA not enabled"
+    },
+    {
+      "time_found": "2025-09-04T11:40:43.098429",
+      "identity_name": "Michael_S",
+      "issue_name": "MFA not enabled"
+    },
+    {
+      "time_found": "2025-09-04T11:40:43.098429",
+      "identity_name": "rsync-test-2",
+      "issue_name": "MFA not enabled"
+    },
+    {
+      "time_found": "2025-09-04T11:40:43.098429",
+      "identity_name": "rsync-test-user",
+      "issue_name": "MFA not enabled"
+    },
+    {
+      "time_found": "2025-09-04T11:40:43.098429",
+      "identity_name": "Sharon_Onboarding",
+      "issue_name": "MFA not enabled"
+    },
+    {
+      "time_found": "2025-09-04T11:40:43.098429",
+      "identity_name": "snowflake-user",
+      "issue_name": "MFA not enabled"
+    },
+    {
+      "time_found": "2025-09-04T11:40:43.098429",
+      "identity_name": "temp-employee",
+      "issue_name": "MFA not enabled"
+    },
+    {
+      "time_found": "2025-09-04T11:40:43.098429",
+      "identity_name": "terraform-test",
+      "issue_name": "MFA not enabled"
+    },
+    {
+      "time_found": "2025-09-04T11:40:43.098429",
+      "identity_name": "test-user",
+      "issue_name": "MFA not enabled"
+    },
+    {
+      "time_found": "2025-09-04T11:40:43.098429",
+      "identity_name": "test-user-gili",
+      "issue_name": "MFA not enabled"
+    },
+    {
+      "time_found": "2025-09-04T11:40:43.098429",
+      "identity_name": "TEST_USER_OFFBOARDED_TEST",
+      "issue_name": "MFA not enabled"
+    },
+    {
+      "time_found": "2025-09-04T11:40:43.098429",
+      "identity_name": "yuval-test",
+      "issue_name": "MFA not enabled"
+    },
+    {
+      "time_found": "2025-09-04T11:40:50.854109",
+      "identity_name": "Andrew_B",
+      "issue_name": "Excessive permissions - IAMFullAccess attached"
+    },
+    {
+      "time_found": "2025-09-04T11:40:50.854109",
+      "identity_name": "Aram-playground",
+      "issue_name": "Excessive permissions - AdministratorAccess attached"
+    },
+    {
+      "time_found": "2025-09-04T11:40:50.854109",
+      "identity_name": "charles-admin",
+      "issue_name": "Excessive permissions - IAMFullAccess attached"
+    },
+    {
+      "time_found": "2025-09-04T11:40:50.854109",
+      "identity_name": "charles-admin",
+      "issue_name": "Excessive permissions - PowerUserAccess attached"
+    },
+    {
+      "time_found": "2025-09-04T11:40:50.854109",
+      "identity_name": "danz-bedrock-testing",
+      "issue_name": "Excessive permissions - AdministratorAccess attached"
+    },
+    {
+      "time_found": "2025-09-04T11:40:50.854109",
+      "identity_name": "gil-admin-test",
+      "issue_name": "Excessive permissions - AdministratorAccess attached"
+    },
+    {
+      "time_found": "2025-09-04T11:40:50.854109",
+      "identity_name": "management-account-breakglass-user",
+      "issue_name": "Excessive permissions - AdministratorAccess attached"
+    },
+    {
+      "time_found": "2025-09-04T11:40:50.854109",
+      "identity_name": "Michael_S",
+      "issue_name": "Excessive permissions - IAMFullAccess attached"
+    },
+    {
+      "time_found": "2025-09-04T11:40:50.854109",
+      "identity_name": "Sharon_Onboarding",
+      "issue_name": "Excessive permissions - IAMFullAccess attached"
+    },
+    {
+      "time_found": "2025-09-04T11:40:57.066045",
+      "identity_name": "Aram-playground",
+      "issue_name": "Old access key (359 days old)"
+    },
+    {
+      "time_found": "2025-09-04T11:40:57.066045",
+      "identity_name": "Aram-playground",
+      "issue_name": "Old access key (155 days old)"
+    },
+    {
+      "time_found": "2025-09-04T11:40:57.066045",
+      "identity_name": "Aramplay",
+      "issue_name": "Old access key (359 days old)"
+    },
+    {
+      "time_found": "2025-09-04T11:40:57.066045",
+      "identity_name": "Aram_through_CLI",
+      "issue_name": "Old access key (359 days old)"
+    },
+    {
+      "time_found": "2025-09-04T11:40:57.066045",
+      "identity_name": "ci-user",
+      "issue_name": "Old access key (636 days old)"
+    },
+    {
+      "time_found": "2025-09-04T11:40:57.066045",
+      "identity_name": "gil-admin-test",
+      "issue_name": "Old access key (135 days old)"
+    },
+    {
+      "time_found": "2025-09-04T11:40:57.066045",
+      "identity_name": "IdoGOktaUser",
+      "issue_name": "Old access key (331 days old)"
+    },
+    {
+      "time_found": "2025-09-04T11:40:57.066045",
+      "identity_name": "JumpcloudIntegration",
+      "issue_name": "Old access key (784 days old)"
+    },
+    {
+      "time_found": "2025-09-04T11:40:57.066045",
+      "identity_name": "keren-sandbox-user",
+      "issue_name": "Old access key (486 days old)"
+    },
+    {
+      "time_found": "2025-09-04T11:40:57.066045",
+      "identity_name": "management-account-breakglass-user",
+      "issue_name": "Old access key (533 days old)"
+    },
+    {
+      "time_found": "2025-09-04T11:40:57.066045",
+      "identity_name": "OktaSSOUser",
+      "issue_name": "Old access key (729 days old)"
+    },
+    {
+      "time_found": "2025-09-04T11:40:57.066045",
+      "identity_name": "OktaSSOUser",
+      "issue_name": "Old access key (715 days old)"
+    },
+    {
+      "time_found": "2025-09-04T11:40:57.066045",
+      "identity_name": "research-user",
+      "issue_name": "Old access key (527 days old)"
+    },
+    {
+      "time_found": "2025-09-04T11:40:57.066045",
+      "identity_name": "rsync-test-2",
+      "issue_name": "Old access key (429 days old)"
+    },
+    {
+      "time_found": "2025-09-04T11:40:57.066045",
+      "identity_name": "rsync-test-user",
+      "issue_name": "Old access key (429 days old)"
+    },
+    {
+      "time_found": "2025-09-04T11:40:57.066045",
+      "identity_name": "Sharon_Onboarding",
+      "issue_name": "Old access key (392 days old)"
+    },
+    {
+      "time_found": "2025-09-04T11:40:57.066045",
+      "identity_name": "snowflake-user",
+      "issue_name": "Old access key (561 days old)"
+    },
+    {
+      "time_found": "2025-09-04T11:40:57.066045",
+      "identity_name": "temp-employee",
+      "issue_name": "Old access key (612 days old)"
+    },
+    {
+      "time_found": "2025-09-04T11:40:57.066045",
+      "identity_name": "terraform-test",
+      "issue_name": "Old access key (682 days old)"
+    },
+    {
+      "time_found": "2025-09-04T11:40:57.066045",
+      "identity_name": "TEST_USER_OFFBOARDED_TEST",
+      "issue_name": "Old access key (491 days old)"
+    },
+    {
+      "time_found": "2025-09-04T11:40:57.066045",
+      "identity_name": "yuval-test",
+      "issue_name": "Old access key (178 days old)"
+    }
+  ]
+}

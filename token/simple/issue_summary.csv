@@ -1,0 +1,22 @@
+issue_name,count,time_found
+Excessive permissions - AdministratorAccess attached,4,2025-09-04 11:27:48.579969
+Excessive permissions - IAMFullAccess attached,4,2025-09-04 11:27:48.579969
+Old access key (359 days old),3,2025-09-04 11:27:55.292490
+Old access key (429 days old),2,2025-09-04 11:27:55.292490
+Old access key (527 days old),1,2025-09-04 11:27:55.292490
+Old access key (729 days old),1,2025-09-04 11:27:55.292490
+Old access key (715 days old),1,2025-09-04 11:27:55.292490
+Old access key (682 days old),1,2025-09-04 11:27:55.292490
+Old access key (636 days old),1,2025-09-04 11:27:55.292490
+Old access key (612 days old),1,2025-09-04 11:27:55.292490
+Old access key (561 days old),1,2025-09-04 11:27:55.292490
+Old access key (533 days old),1,2025-09-04 11:27:55.292490
+Old access key (486 days old),1,2025-09-04 11:27:55.292490
+Old access key (491 days old),1,2025-09-04 11:27:55.292490
+Old access key (392 days old),1,2025-09-04 11:27:55.292490
+Old access key (331 days old),1,2025-09-04 11:27:55.292490
+Old access key (178 days old),1,2025-09-04 11:27:55.292490
+Old access key (155 days old),1,2025-09-04 11:27:55.292490
+Old access key (135 days old),1,2025-09-04 11:27:55.292490
+Excessive permissions - PowerUserAccess attached,1,2025-09-04 11:27:48.579969
+Old access key (784 days old),1,2025-09-04 11:27:55.292490

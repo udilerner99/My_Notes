@@ -1,0 +1,31 @@
+time_found,identity_name,issue_name
+2025-09-04 11:27:48.579969,Andrew_B,Excessive permissions - IAMFullAccess attached
+2025-09-04 11:27:48.579969,Aram-playground,Excessive permissions - AdministratorAccess attached
+2025-09-04 11:27:48.579969,charles-admin,Excessive permissions - IAMFullAccess attached
+2025-09-04 11:27:48.579969,charles-admin,Excessive permissions - PowerUserAccess attached
+2025-09-04 11:27:48.579969,danz-bedrock-testing,Excessive permissions - AdministratorAccess attached
+2025-09-04 11:27:48.579969,gil-admin-test,Excessive permissions - AdministratorAccess attached
+2025-09-04 11:27:48.579969,management-account-breakglass-user,Excessive permissions - AdministratorAccess attached
+2025-09-04 11:27:48.579969,Michael_S,Excessive permissions - IAMFullAccess attached
+2025-09-04 11:27:48.579969,Sharon_Onboarding,Excessive permissions - IAMFullAccess attached
+2025-09-04 11:27:55.292490,Aram-playground,Old access key (359 days old)
+2025-09-04 11:27:55.292490,Aram-playground,Old access key (155 days old)
+2025-09-04 11:27:55.292490,Aramplay,Old access key (359 days old)
+2025-09-04 11:27:55.292490,Aram_through_CLI,Old access key (359 days old)
+2025-09-04 11:27:55.292490,ci-user,Old access key (636 days old)
+2025-09-04 11:27:55.292490,gil-admin-test,Old access key (135 days old)
+2025-09-04 11:27:55.292490,IdoGOktaUser,Old access key (331 days old)
+2025-09-04 11:27:55.292490,JumpcloudIntegration,Old access key (784 days old)
+2025-09-04 11:27:55.292490,keren-sandbox-user,Old access key (486 days old)
+2025-09-04 11:27:55.292490,management-account-breakglass-user,Old access key (533 days old)
+2025-09-04 11:27:55.292490,OktaSSOUser,Old access key (729 days old)
+2025-09-04 11:27:55.292490,OktaSSOUser,Old access key (715 days old)
+2025-09-04 11:27:55.292490,research-user,Old access key (527 days old)
+2025-09-04 11:27:55.292490,rsync-test-2,Old access key (429 days old)
+2025-09-04 11:27:55.292490,rsync-test-user,Old access key (429 days old)
+2025-09-04 11:27:55.292490,Sharon_Onboarding,Old access key (392 days old)
+2025-09-04 11:27:55.292490,snowflake-user,Old access key (561 days old)
+2025-09-04 11:27:55.292490,temp-employee,Old access key (612 days old)
+2025-09-04 11:27:55.292490,terraform-test,Old access key (682 days old)
+2025-09-04 11:27:55.292490,TEST_USER_OFFBOARDED_TEST,Old access key (491 days old)
+2025-09-04 11:27:55.292490,yuval-test,Old access key (178 days old)

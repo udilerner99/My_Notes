@@ -1,0 +1,290 @@
+{
+  "assessment_metadata": {
+    "timestamp": "2025-09-04T10:46:36.298887",
+    "total_findings": 35,
+    "aws_region": "us-east-1",
+    "profile_used": "default"
+  },
+  "findings": [
+    {
+      "time_found": "2025-09-04T10:46:22.846287",
+      "identity_name": "Andrew_B",
+      "issue_name": "Excessive permissions - High privilege policy attached",
+      "severity": "High",
+      "description": "User Andrew_B has the high-privilege policy 'IAMFullAccess' directly attached.",
+      "recommendation": "Review if this user requires such broad permissions. Consider using groups or more specific policies."
+    },
+    {
+      "time_found": "2025-09-04T10:46:22.846287",
+      "identity_name": "Aram-playground",
+      "issue_name": "Excessive permissions - High privilege policy attached",
+      "severity": "High",
+      "description": "User Aram-playground has the high-privilege policy 'AdministratorAccess' directly attached.",
+      "recommendation": "Review if this user requires such broad permissions. Consider using groups or more specific policies."
+    },
+    {
+      "time_found": "2025-09-04T10:46:22.846287",
+      "identity_name": "Michael_S",
+      "issue_name": "Excessive permissions - High privilege policy attached",
+      "severity": "High",
+      "description": "User Michael_S has the high-privilege policy 'IAMFullAccess' directly attached.",
+      "recommendation": "Review if this user requires such broad permissions. Consider using groups or more specific policies."
+    },
+    {
+      "time_found": "2025-09-04T10:46:22.846287",
+      "identity_name": "Sharon_Onboarding",
+      "issue_name": "Excessive permissions - High privilege policy attached",
+      "severity": "High",
+      "description": "User Sharon_Onboarding has the high-privilege policy 'IAMFullAccess' directly attached.",
+      "recommendation": "Review if this user requires such broad permissions. Consider using groups or more specific policies."
+    },
+    {
+      "time_found": "2025-09-04T10:46:22.846287",
+      "identity_name": "charles-admin",
+      "issue_name": "Excessive permissions - High privilege policy attached",
+      "severity": "High",
+      "description": "User charles-admin has the high-privilege policy 'IAMFullAccess' directly attached.",
+      "recommendation": "Review if this user requires such broad permissions. Consider using groups or more specific policies."
+    },
+    {
+      "time_found": "2025-09-04T10:46:22.846287",
+      "identity_name": "charles-admin",
+      "issue_name": "Excessive permissions - High privilege policy attached",
+      "severity": "High",
+      "description": "User charles-admin has the high-privilege policy 'PowerUserAccess' directly attached.",
+      "recommendation": "Review if this user requires such broad permissions. Consider using groups or more specific policies."
+    },
+    {
+      "time_found": "2025-09-04T10:46:22.846287",
+      "identity_name": "danz-bedrock-testing",
+      "issue_name": "Excessive permissions - High privilege policy attached",
+      "severity": "High",
+      "description": "User danz-bedrock-testing has the high-privilege policy 'AdministratorAccess' directly attached.",
+      "recommendation": "Review if this user requires such broad permissions. Consider using groups or more specific policies."
+    },
+    {
+      "time_found": "2025-09-04T10:46:22.846287",
+      "identity_name": "gil-admin-test",
+      "issue_name": "Excessive permissions - High privilege policy attached",
+      "severity": "High",
+      "description": "User gil-admin-test has the high-privilege policy 'AdministratorAccess' directly attached.",
+      "recommendation": "Review if this user requires such broad permissions. Consider using groups or more specific policies."
+    },
+    {
+      "time_found": "2025-09-04T10:46:22.846287",
+      "identity_name": "management-account-breakglass-user",
+      "issue_name": "Excessive permissions - High privilege policy attached",
+      "severity": "High",
+      "description": "User management-account-breakglass-user has the high-privilege policy 'AdministratorAccess' directly attached.",
+      "recommendation": "Review if this user requires such broad permissions. Consider using groups or more specific policies."
+    },
+    {
+      "time_found": "2025-09-04T10:46:29.829295",
+      "identity_name": "Aram-playground",
+      "issue_name": "Old access key",
+      "severity": "Medium",
+      "description": "Access key AKIATOPRMNY7RAIF4ENZ for user Aram-playground is 359 days old.",
+      "recommendation": "Consider rotating access keys regularly (every 90 days) as a security best practice."
+    },
+    {
+      "time_found": "2025-09-04T10:46:29.829295",
+      "identity_name": "Aram_through_CLI",
+      "issue_name": "Old access key",
+      "severity": "Medium",
+      "description": "Access key AKIATOPRMNY76HDPCL7G for user Aram_through_CLI is 359 days old.",
+      "recommendation": "Consider rotating access keys regularly (every 90 days) as a security best practice."
+    },
+    {
+      "time_found": "2025-09-04T10:46:29.829295",
+      "identity_name": "Aramplay",
+      "issue_name": "Old access key",
+      "severity": "Medium",
+      "description": "Access key AKIATOPRMNY7RV3XKPPF for user Aramplay is 359 days old.",
+      "recommendation": "Consider rotating access keys regularly (every 90 days) as a security best practice."
+    },
+    {
+      "time_found": "2025-09-04T10:46:29.829295",
+      "identity_name": "IdoGOktaUser",
+      "issue_name": "Old access key",
+      "severity": "Medium",
+      "description": "Access key AKIATOPRMNY7Z56JWWMD for user IdoGOktaUser is 331 days old.",
+      "recommendation": "Consider rotating access keys regularly (every 90 days) as a security best practice."
+    },
+    {
+      "time_found": "2025-09-04T10:46:29.829295",
+      "identity_name": "JumpcloudIntegration",
+      "issue_name": "Old access key",
+      "severity": "Medium",
+      "description": "Access key AKIATOPRMNY7RCP3XXFD for user JumpcloudIntegration is 784 days old.",
+      "recommendation": "Consider rotating access keys regularly (every 90 days) as a security best practice."
+    },
+    {
+      "time_found": "2025-09-04T10:46:29.829295",
+      "identity_name": "OktaSSOUser",
+      "issue_name": "Old access key",
+      "severity": "Medium",
+      "description": "Access key AKIATOPRMNY7V6VEA45O for user OktaSSOUser is 729 days old.",
+      "recommendation": "Consider rotating access keys regularly (every 90 days) as a security best practice."
+    },
+    {
+      "time_found": "2025-09-04T10:46:29.829295",
+      "identity_name": "Sharon_Onboarding",
+      "issue_name": "Old access key",
+      "severity": "Medium",
+      "description": "Access key AKIATOPRMNY73KBUQYPY for user Sharon_Onboarding is 392 days old.",
+      "recommendation": "Consider rotating access keys regularly (every 90 days) as a security best practice."
+    },
+    {
+      "time_found": "2025-09-04T10:46:29.829295",
+      "identity_name": "TEST_USER_OFFBOARDED_TEST",
+      "issue_name": "Old access key",
+      "severity": "Medium",
+      "description": "Access key AKIATOPRMNY7SRTMQ3KR for user TEST_USER_OFFBOARDED_TEST is 491 days old.",
+      "recommendation": "Consider rotating access keys regularly (every 90 days) as a security best practice."
+    },
+    {
+      "time_found": "2025-09-04T10:46:29.829295",
+      "identity_name": "ci-user",
+      "issue_name": "Old access key",
+      "severity": "Medium",
+      "description": "Access key AKIATOPRMNY7TR4YVEWK for user ci-user is 636 days old.",
+      "recommendation": "Consider rotating access keys regularly (every 90 days) as a security best practice."
+    },
+    {
+      "time_found": "2025-09-04T10:46:29.829295",
+      "identity_name": "gil-admin-test",
+      "issue_name": "Old access key",
+      "severity": "Medium",
+      "description": "Access key AKIATOPRMNY7U24ZVVM5 for user gil-admin-test is 135 days old.",
+      "recommendation": "Consider rotating access keys regularly (every 90 days) as a security best practice."
+    },
+    {
+      "time_found": "2025-09-04T10:46:29.829295",
+      "identity_name": "keren-sandbox-user",
+      "issue_name": "Old access key",
+      "severity": "Medium",
+      "description": "Access key AKIATOPRMNY73KFSBG5X for user keren-sandbox-user is 486 days old.",
+      "recommendation": "Consider rotating access keys regularly (every 90 days) as a security best practice."
+    },
+    {
+      "time_found": "2025-09-04T10:46:29.829295",
+      "identity_name": "management-account-breakglass-user",
+      "issue_name": "Old access key",
+      "severity": "Medium",
+      "description": "Access key AKIATOPRMNY7UZ4LD2VK for user management-account-breakglass-user is 533 days old.",
+      "recommendation": "Consider rotating access keys regularly (every 90 days) as a security best practice."
+    },
+    {
+      "time_found": "2025-09-04T10:46:29.829295",
+      "identity_name": "research-user",
+      "issue_name": "Old access key",
+      "severity": "Medium",
+      "description": "Access key AKIATOPRMNY7XSGHNV5J for user research-user is 527 days old.",
+      "recommendation": "Consider rotating access keys regularly (every 90 days) as a security best practice."
+    },
+    {
+      "time_found": "2025-09-04T10:46:29.829295",
+      "identity_name": "rsync-test-2",
+      "issue_name": "Old access key",
+      "severity": "Medium",
+      "description": "Access key AKIATOPRMNY753Y7SYVZ for user rsync-test-2 is 429 days old.",
+      "recommendation": "Consider rotating access keys regularly (every 90 days) as a security best practice."
+    },
+    {
+      "time_found": "2025-09-04T10:46:29.829295",
+      "identity_name": "rsync-test-user",
+      "issue_name": "Old access key",
+      "severity": "Medium",
+      "description": "Access key AKIATOPRMNY7SVFI72FL for user rsync-test-user is 429 days old.",
+      "recommendation": "Consider rotating access keys regularly (every 90 days) as a security best practice."
+    },
+    {
+      "time_found": "2025-09-04T10:46:29.829295",
+      "identity_name": "snowflake-user",
+      "issue_name": "Old access key",
+      "severity": "Medium",
+      "description": "Access key AKIATOPRMNY73UUMB2XF for user snowflake-user is 561 days old.",
+      "recommendation": "Consider rotating access keys regularly (every 90 days) as a security best practice."
+    },
+    {
+      "time_found": "2025-09-04T10:46:29.829295",
+      "identity_name": "temp-employee",
+      "issue_name": "Old access key",
+      "severity": "Medium",
+      "description": "Access key AKIATOPRMNY7WCIJ3MW7 for user temp-employee is 612 days old.",
+      "recommendation": "Consider rotating access keys regularly (every 90 days) as a security best practice."
+    },
+    {
+      "time_found": "2025-09-04T10:46:29.829295",
+      "identity_name": "terraform-test",
+      "issue_name": "Old access key",
+      "severity": "Medium",
+      "description": "Access key AKIATOPRMNY7W3ETAMPQ for user terraform-test is 682 days old.",
+      "recommendation": "Consider rotating access keys regularly (every 90 days) as a security best practice."
+    },
+    {
+      "time_found": "2025-09-04T10:46:29.829295",
+      "identity_name": "yuval-test",
+      "issue_name": "Old access key",
+      "severity": "Medium",
+      "description": "Access key AKIATOPRMNY732KS4Z7S for user yuval-test is 178 days old.",
+      "recommendation": "Consider rotating access keys regularly (every 90 days) as a security best practice."
+    },
+    {
+      "time_found": "2025-09-04T10:46:29.829295",
+      "identity_name": "Aram-playground",
+      "issue_name": "Multiple access keys",
+      "severity": "Low",
+      "description": "User Aram-playground has 2 access keys.",
+      "recommendation": "Consider if multiple access keys are necessary. Use key rotation instead of creating multiple keys."
+    },
+    {
+      "time_found": "2025-09-04T10:46:29.829295",
+      "identity_name": "Aram_through_CLI",
+      "issue_name": "Inactive access key not deleted",
+      "severity": "Low",
+      "description": "Access key AKIATOPRMNY76HDPCL7G for user Aram_through_CLI is inactive but not deleted.",
+      "recommendation": "Delete unused access keys to reduce potential attack surface."
+    },
+    {
+      "time_found": "2025-09-04T10:46:29.829295",
+      "identity_name": "Aramplay",
+      "issue_name": "Inactive access key not deleted",
+      "severity": "Low",
+      "description": "Access key AKIATOPRMNY7RV3XKPPF for user Aramplay is inactive but not deleted.",
+      "recommendation": "Delete unused access keys to reduce potential attack surface."
+    },
+    {
+      "time_found": "2025-09-04T10:46:29.829295",
+      "identity_name": "OktaSSOUser",
+      "issue_name": "Multiple access keys",
+      "severity": "Low",
+      "description": "User OktaSSOUser has 2 access keys.",
+      "recommendation": "Consider if multiple access keys are necessary. Use key rotation instead of creating multiple keys."
+    },
+    {
+      "time_found": "2025-09-04T10:46:29.829295",
+      "identity_name": "gili_onboarding",
+      "issue_name": "Multiple access keys",
+      "severity": "Low",
+      "description": "User gili_onboarding has 2 access keys.",
+      "recommendation": "Consider if multiple access keys are necessary. Use key rotation instead of creating multiple keys."
+    },
+    {
+      "time_found": "2025-09-04T10:46:29.829295",
+      "identity_name": "temp-employee",
+      "issue_name": "Inactive access key not deleted",
+      "severity": "Low",
+      "description": "Access key AKIATOPRMNY7WCIJ3MW7 for user temp-employee is inactive but not deleted.",
+      "recommendation": "Delete unused access keys to reduce potential attack surface."
+    },
+    {
+      "time_found": "2025-09-04T10:46:29.829295",
+      "identity_name": "yuval-test",
+      "issue_name": "Inactive access key not deleted",
+      "severity": "Low",
+      "description": "Access key AKIATOPRMNY732KS4Z7S for user yuval-test is inactive but not deleted.",
+      "recommendation": "Delete unused access keys to reduce potential attack surface."
+    }
+  ]
+}
