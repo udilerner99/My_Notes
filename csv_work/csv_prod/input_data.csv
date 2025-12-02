@@ -1,0 +1,11 @@
+id,name,age,country,purchase_amount,tax
+1,John Doe,30,USA,500,0.1
+2,Jane Smith,,UK,250,0.07
+3,Bob Lee,N/A,CAN,not_valid,0.05
+4,,45,Israel,900,0.02
+5,Chris P,28,,1000,invalid
+6,Ana,MISSING,USA,300,0.5
+7,Tom,35,UK,400,2.5
+8,Marcy,22,USA,,0.18
+9,Karen,40,USA,850,0.12
+10,InvalidID,text,USA,100,0.08
